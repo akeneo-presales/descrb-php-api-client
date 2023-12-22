@@ -1,0 +1,43 @@
+# # ProductDescriptionInDB
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**id** | **string** |  | [optional]
+**name** | **string** |  | [optional]
+**description** | **string** |  | [optional]
+**prompt** | **string** |  | [optional]
+**length** | **int** | Number of Tokens | [optional] [default to 512]
+**language** | **string** |  | [optional] [default to 'pl']
+**data_language** | **string** | Data Language | [optional]
+**language_style** | **string** |  | [optional] [default to 'Neutral']
+**owner_id** | **string** |  | [optional]
+**created_at** | **\DateTime** |  | [optional]
+**updated_at** | **\DateTime** |  | [optional]
+**completed** | **bool** |  | [optional] [default to false]
+**comment** | **string** |  | [optional]
+**score** | **int** |  | [optional]
+**reviewed** | **bool** |  | [optional] [default to false]
+**brand_name** | **string** |  | [optional]
+**keywords** | **string** | Important Keywords to include | [optional]
+**seotags** | **bool** | Add SEO Tags | [optional] [default to false]
+**labels** | **mixed** | Labels to include | [optional]
+**logos** | **mixed** | Logos to include | [optional]
+**captions** | **string** | Image Captions | [optional]
+**photo_url** | **string** | Photo URL | [optional]
+**google_product_id** | **string** | Google Product Identification | [optional]
+**product_sku** | **string** | Stock Keeping Unit | [optional]
+**product_mpn** | **string** | Manufacturer Part Number | [optional]
+**product_code** | **string** | Manufacturer Code or Style Number | [optional]
+**search_data** | **mixed** | Search Data | [optional]
+**google_product_description** | **mixed** | Google Product Description | [optional]
+**status** | **string** |  | [optional] [default to 'success']
+**describe_colors** | **bool** |  | [optional] [default to false]
+**describe_materials** | **bool** |  | [optional] [default to false]
+**brand_description_bool** | **bool** |  | [optional]
+**product_history_description_bool** | **bool** |  | [optional]
+**technologies_bool** | **bool** |  | [optional]
+**seen_bool** | **bool** |  | [optional]
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
