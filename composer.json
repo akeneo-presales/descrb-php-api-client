@@ -1,4 +1,5 @@
 {
+    "name": "akeneo-presales/descrb-php-api-client",
     "description": "PHP Descrb OpenAPI client",
     "license": "unlicense",
     "authors": [
