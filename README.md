@@ -19,11 +19,11 @@ To install the bindings via [Composer](https://getcomposer.org/), add the follow
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/akeneo-presales/Descrb-PHP-API-Client.git"
+      "url": "https://github.com/akeneo-presales/descrb-php-api-client.git"
     }
   ],
   "require": {
-    "akeneo-presales/Descrb-PHP-API-Client": "*@dev"
+    "akeneo-presales/descrb-php-api-client": "*@dev"
   }
 }
 ```
