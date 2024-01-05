@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  AkeneoPresales\DescrbAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace AkeneoPresales\DescrbAPI\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \AkeneoPresales\DescrbAPI\Client\ObjectSerializer;
 
 /**
  * HTTPValidationError Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  AkeneoPresales\DescrbAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -59,7 +59,7 @@ class HTTPValidationError implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'detail' => '\OpenAPI\Client\Model\ValidationError[]'
+        'detail' => '\AkeneoPresales\DescrbAPI\Client\Model\ValidationError[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class HTTPValidationError implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets detail
      *
-     * @return \OpenAPI\Client\Model\ValidationError[]|null
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\ValidationError[]|null
      */
     public function getDetail()
     {
@@ -218,7 +218,7 @@ class HTTPValidationError implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets detail
      *
-     * @param \OpenAPI\Client\Model\ValidationError[]|null $detail detail
+     * @param \AkeneoPresales\DescrbAPI\Client\Model\ValidationError[]|null $detail detail
      *
      * @return self
      */

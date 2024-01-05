@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  AkeneoPresales\DescrbAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -43,7 +43,7 @@ use AkeneoPresales\DescrbAPI\Client\ObjectSerializer;
  * ProductApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  AkeneoPresales\DescrbAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -141,9 +141,9 @@ class ProductApi
      * @param  bool $describe_colors Should the description include colors (optional, default to false)
      * @param  bool $describe_materials Should the description include materials (optional, default to false)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return mixed|\OpenAPI\Client\Model\HTTPValidationError
+     * @return mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function createDemoProductAdApiV1ProductDemoPost($base_image = null, $segmented_image = null, $photo_url = '', $name = null, $product_id = null, $length = 512, $language = 'pl', $data_language = '', $language_style = 'Neutral', $keywords = '', $seotags = false, $product_history = false, $manufacturer_history = false, $technologies = false, $labels = false, $logos = false, $search_codes = false, $unique_product = false, $describe_colors = false, $describe_materials = false)
     {
@@ -177,9 +177,9 @@ class ProductApi
      * @param  bool $describe_colors Should the description include colors (optional, default to false)
      * @param  bool $describe_materials Should the description include materials (optional, default to false)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of mixed|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function createDemoProductAdApiV1ProductDemoPostWithHttpInfo($base_image = null, $segmented_image = null, $photo_url = '', $name = null, $product_id = null, $length = 512, $language = 'pl', $data_language = '', $language_style = 'Neutral', $keywords = '', $seotags = false, $product_history = false, $manufacturer_history = false, $technologies = false, $labels = false, $logos = false, $search_codes = false, $unique_product = false, $describe_colors = false, $describe_materials = false)
     {
@@ -234,14 +234,14 @@ class ProductApi
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -273,7 +273,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -601,9 +601,9 @@ class ProductApi
      * @param  bool $describe_colors Should the description include colors (optional, default to false)
      * @param  bool $describe_materials Should the description include materials (optional, default to false)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return mixed|\OpenAPI\Client\Model\HTTPValidationError
+     * @return mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function createProductAdApiV1ProductPost($base_image = null, $segmented_image = null, $photo_url = '', $name = null, $product_id = null, $length = 512, $language = 'pl', $data_language = '', $language_style = 'Neutral', $keywords = '', $seotags = false, $product_history = false, $manufacturer_history = false, $technologies = false, $labels = false, $logos = false, $search_codes = false, $unique_product = false, $describe_colors = false, $describe_materials = false)
     {
@@ -637,9 +637,9 @@ class ProductApi
      * @param  bool $describe_colors Should the description include colors (optional, default to false)
      * @param  bool $describe_materials Should the description include materials (optional, default to false)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of mixed|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function createProductAdApiV1ProductPostWithHttpInfo($base_image = null, $segmented_image = null, $photo_url = '', $name = null, $product_id = null, $length = 512, $language = 'pl', $data_language = '', $language_style = 'Neutral', $keywords = '', $seotags = false, $product_history = false, $manufacturer_history = false, $technologies = false, $labels = false, $logos = false, $search_codes = false, $unique_product = false, $describe_colors = false, $describe_materials = false)
     {
@@ -694,14 +694,14 @@ class ProductApi
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -733,7 +733,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1045,11 +1045,11 @@ class ProductApi
      * Edit Brand Description
      *
      * @param  string $description_id description_id (required)
-     * @param  \OpenAPI\Client\Model\BrandDescriptionUpdate $brand_description_update brand_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate $brand_description_update brand_description_update (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\BrandDescriptionUpdate|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function editBrandDescriptionApiV1ProductBrandDescriptionIdPatch($description_id, $brand_description_update)
     {
@@ -1063,11 +1063,11 @@ class ProductApi
      * Edit Brand Description
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\BrandDescriptionUpdate $brand_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate $brand_description_update (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\BrandDescriptionUpdate|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function editBrandDescriptionApiV1ProductBrandDescriptionIdPatchWithHttpInfo($description_id, $brand_description_update)
     {
@@ -1110,32 +1110,32 @@ class ProductApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\BrandDescriptionUpdate' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\BrandDescriptionUpdate', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\BrandDescriptionUpdate';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1153,7 +1153,7 @@ class ProductApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\BrandDescriptionUpdate',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1161,7 +1161,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1177,7 +1177,7 @@ class ProductApi
      * Edit Brand Description
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\BrandDescriptionUpdate $brand_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate $brand_description_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1198,14 +1198,14 @@ class ProductApi
      * Edit Brand Description
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\BrandDescriptionUpdate $brand_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate $brand_description_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function editBrandDescriptionApiV1ProductBrandDescriptionIdPatchAsyncWithHttpInfo($description_id, $brand_description_update)
     {
-        $returnType = '\OpenAPI\Client\Model\BrandDescriptionUpdate';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate';
         $request = $this->editBrandDescriptionApiV1ProductBrandDescriptionIdPatchRequest($description_id, $brand_description_update);
 
         return $this->client
@@ -1245,7 +1245,7 @@ class ProductApi
      * Create request for operation 'editBrandDescriptionApiV1ProductBrandDescriptionIdPatch'
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\BrandDescriptionUpdate $brand_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate $brand_description_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1357,11 +1357,11 @@ class ProductApi
      * Edit Description
      *
      * @param  string $description_id description_id (required)
-     * @param  \OpenAPI\Client\Model\ProductDescriptionUpdate $product_description_update product_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate $product_description_update product_description_update (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProductDescriptionUpdate|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function editDescriptionApiV1ProductDescriptionDescriptionIdPatch($description_id, $product_description_update)
     {
@@ -1375,11 +1375,11 @@ class ProductApi
      * Edit Description
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\ProductDescriptionUpdate $product_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate $product_description_update (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProductDescriptionUpdate|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function editDescriptionApiV1ProductDescriptionDescriptionIdPatchWithHttpInfo($description_id, $product_description_update)
     {
@@ -1422,32 +1422,32 @@ class ProductApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ProductDescriptionUpdate' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProductDescriptionUpdate', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProductDescriptionUpdate';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1465,7 +1465,7 @@ class ProductApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProductDescriptionUpdate',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1473,7 +1473,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1489,7 +1489,7 @@ class ProductApi
      * Edit Description
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\ProductDescriptionUpdate $product_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate $product_description_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1510,14 +1510,14 @@ class ProductApi
      * Edit Description
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\ProductDescriptionUpdate $product_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate $product_description_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function editDescriptionApiV1ProductDescriptionDescriptionIdPatchAsyncWithHttpInfo($description_id, $product_description_update)
     {
-        $returnType = '\OpenAPI\Client\Model\ProductDescriptionUpdate';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate';
         $request = $this->editDescriptionApiV1ProductDescriptionDescriptionIdPatchRequest($description_id, $product_description_update);
 
         return $this->client
@@ -1557,7 +1557,7 @@ class ProductApi
      * Create request for operation 'editDescriptionApiV1ProductDescriptionDescriptionIdPatch'
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\ProductDescriptionUpdate $product_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate $product_description_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1669,11 +1669,11 @@ class ProductApi
      * Edit History Description
      *
      * @param  string $description_id description_id (required)
-     * @param  \OpenAPI\Client\Model\ProductHistoryUpdate $product_history_update product_history_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate $product_history_update product_history_update (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProductHistoryUpdate|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function editHistoryDescriptionApiV1ProductHistoryDescriptionIdPatch($description_id, $product_history_update)
     {
@@ -1687,11 +1687,11 @@ class ProductApi
      * Edit History Description
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\ProductHistoryUpdate $product_history_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate $product_history_update (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProductHistoryUpdate|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function editHistoryDescriptionApiV1ProductHistoryDescriptionIdPatchWithHttpInfo($description_id, $product_history_update)
     {
@@ -1734,32 +1734,32 @@ class ProductApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ProductHistoryUpdate' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProductHistoryUpdate', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProductHistoryUpdate';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1777,7 +1777,7 @@ class ProductApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProductHistoryUpdate',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1785,7 +1785,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1801,7 +1801,7 @@ class ProductApi
      * Edit History Description
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\ProductHistoryUpdate $product_history_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate $product_history_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1822,14 +1822,14 @@ class ProductApi
      * Edit History Description
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\ProductHistoryUpdate $product_history_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate $product_history_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function editHistoryDescriptionApiV1ProductHistoryDescriptionIdPatchAsyncWithHttpInfo($description_id, $product_history_update)
     {
-        $returnType = '\OpenAPI\Client\Model\ProductHistoryUpdate';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate';
         $request = $this->editHistoryDescriptionApiV1ProductHistoryDescriptionIdPatchRequest($description_id, $product_history_update);
 
         return $this->client
@@ -1869,7 +1869,7 @@ class ProductApi
      * Create request for operation 'editHistoryDescriptionApiV1ProductHistoryDescriptionIdPatch'
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\ProductHistoryUpdate $product_history_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate $product_history_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1982,9 +1982,9 @@ class ProductApi
      *
      * @param  mixed[] $request_body request_body (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return mixed|\OpenAPI\Client\Model\HTTPValidationError
+     * @return mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function exportChosenToCsvApiV1ProductExportChosenPut($request_body)
     {
@@ -1999,9 +1999,9 @@ class ProductApi
      *
      * @param  mixed[] $request_body (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of mixed|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportChosenToCsvApiV1ProductExportChosenPutWithHttpInfo($request_body)
     {
@@ -2056,14 +2056,14 @@ class ProductApi
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2095,7 +2095,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2277,9 +2277,9 @@ class ProductApi
      * @param  int $limit limit (optional, default to 50)
      * @param  int $offset offset (optional, default to 0)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return mixed|\OpenAPI\Client\Model\HTTPValidationError
+     * @return mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function exportPageToCsvAdminPanelApiV1ProductAdminExportCurrentPageGet($user_id = null, $limit = 50, $offset = 0)
     {
@@ -2296,9 +2296,9 @@ class ProductApi
      * @param  int $limit (optional, default to 50)
      * @param  int $offset (optional, default to 0)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of mixed|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportPageToCsvAdminPanelApiV1ProductAdminExportCurrentPageGetWithHttpInfo($user_id = null, $limit = 50, $offset = 0)
     {
@@ -2353,14 +2353,14 @@ class ProductApi
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2392,7 +2392,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2611,9 +2611,9 @@ class ProductApi
      * @param  int $limit limit (optional, default to 50)
      * @param  int $offset offset (optional, default to 0)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return mixed|\OpenAPI\Client\Model\HTTPValidationError
+     * @return mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function exportPageToCsvApiV1ProductExportCurrentPageGet($limit = 50, $offset = 0)
     {
@@ -2629,9 +2629,9 @@ class ProductApi
      * @param  int $limit (optional, default to 50)
      * @param  int $offset (optional, default to 0)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of mixed|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportPageToCsvApiV1ProductExportCurrentPageGetWithHttpInfo($limit = 50, $offset = 0)
     {
@@ -2686,14 +2686,14 @@ class ProductApi
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2725,7 +2725,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2931,9 +2931,9 @@ class ProductApi
      * @param  mixed $limit limit (optional)
      * @param  mixed $offset offset (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return mixed|\OpenAPI\Client\Model\HTTPValidationError
+     * @return mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function exportToCsvAdminPanelApiV1ProductAdminExportAllGet($user_id = null, $limit = null, $offset = null)
     {
@@ -2950,9 +2950,9 @@ class ProductApi
      * @param  mixed $limit (optional)
      * @param  mixed $offset (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of mixed|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportToCsvAdminPanelApiV1ProductAdminExportAllGetWithHttpInfo($user_id = null, $limit = null, $offset = null)
     {
@@ -3007,14 +3007,14 @@ class ProductApi
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3046,7 +3046,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3254,9 +3254,9 @@ class ProductApi
      * @param  mixed $limit limit (optional)
      * @param  mixed $offset offset (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return mixed|\OpenAPI\Client\Model\HTTPValidationError
+     * @return mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function exportToCsvApiV1ProductExportAllGet($limit = null, $offset = null)
     {
@@ -3272,9 +3272,9 @@ class ProductApi
      * @param  mixed $limit (optional)
      * @param  mixed $offset (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of mixed|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportToCsvApiV1ProductExportAllGetWithHttpInfo($limit = null, $offset = null)
     {
@@ -3329,14 +3329,14 @@ class ProductApi
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3368,7 +3368,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3561,9 +3561,9 @@ class ProductApi
      *
      * @param  string $description_id description_id (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProductDescriptionExtended|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionExtended|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function getDescriptionApiV1ProductDescriptionIdGet($description_id)
     {
@@ -3578,9 +3578,9 @@ class ProductApi
      *
      * @param  string $description_id (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProductDescriptionExtended|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionExtended|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDescriptionApiV1ProductDescriptionIdGetWithHttpInfo($description_id)
     {
@@ -3623,32 +3623,32 @@ class ProductApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ProductDescriptionExtended' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionExtended' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProductDescriptionExtended', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionExtended', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProductDescriptionExtended';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionExtended';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3666,7 +3666,7 @@ class ProductApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProductDescriptionExtended',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionExtended',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3674,7 +3674,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3716,7 +3716,7 @@ class ProductApi
      */
     public function getDescriptionApiV1ProductDescriptionIdGetAsyncWithHttpInfo($description_id)
     {
-        $returnType = '\OpenAPI\Client\Model\ProductDescriptionExtended';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionExtended';
         $request = $this->getDescriptionApiV1ProductDescriptionIdGetRequest($description_id);
 
         return $this->client
@@ -3861,9 +3861,9 @@ class ProductApi
      * @param  int $limit limit (optional, default to 50)
      * @param  int $offset offset (optional, default to 0)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\LimitOffsetPageProductDescriptionInDB|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionInDB|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function readAllProductDescriptionsApiV1ProductAllGet($score = null, $name__ilike = null, $brand_name__ilike = null, $order_by = 'score,name,brand_name,created_at,brand_description_bool,product_history_description_bool,technologies_bool', $limit = 50, $offset = 0)
     {
@@ -3883,9 +3883,9 @@ class ProductApi
      * @param  int $limit (optional, default to 50)
      * @param  int $offset (optional, default to 0)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\LimitOffsetPageProductDescriptionInDB|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionInDB|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function readAllProductDescriptionsApiV1ProductAllGetWithHttpInfo($score = null, $name__ilike = null, $brand_name__ilike = null, $order_by = 'score,name,brand_name,created_at,brand_description_bool,product_history_description_bool,technologies_bool', $limit = 50, $offset = 0)
     {
@@ -3928,32 +3928,32 @@ class ProductApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionInDB' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionInDB' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionInDB', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionInDB', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionInDB';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionInDB';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3971,7 +3971,7 @@ class ProductApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionInDB',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionInDB',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3979,7 +3979,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4031,7 +4031,7 @@ class ProductApi
      */
     public function readAllProductDescriptionsApiV1ProductAllGetAsyncWithHttpInfo($score = null, $name__ilike = null, $brand_name__ilike = null, $order_by = 'score,name,brand_name,created_at,brand_description_bool,product_history_description_bool,technologies_bool', $limit = 50, $offset = 0)
     {
-        $returnType = '\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionInDB';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionInDB';
         $request = $this->readAllProductDescriptionsApiV1ProductAllGetRequest($score, $name__ilike, $brand_name__ilike, $order_by, $limit, $offset);
 
         return $this->client
@@ -4244,9 +4244,9 @@ class ProductApi
      * @param  int $limit limit (optional, default to 50)
      * @param  int $offset offset (optional, default to 0)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\LimitOffsetPageProductDescriptionInDB|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionInDB|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function readUserProductDescriptionsApiV1ProductMyReviewsGet($score = null, $name__ilike = null, $brand_name__ilike = null, $order_by = 'score,name,brand_name,created_at,brand_description_bool,product_history_description_bool,technologies_bool', $limit = 50, $offset = 0)
     {
@@ -4266,9 +4266,9 @@ class ProductApi
      * @param  int $limit (optional, default to 50)
      * @param  int $offset (optional, default to 0)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\LimitOffsetPageProductDescriptionInDB|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionInDB|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function readUserProductDescriptionsApiV1ProductMyReviewsGetWithHttpInfo($score = null, $name__ilike = null, $brand_name__ilike = null, $order_by = 'score,name,brand_name,created_at,brand_description_bool,product_history_description_bool,technologies_bool', $limit = 50, $offset = 0)
     {
@@ -4311,32 +4311,32 @@ class ProductApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionInDB' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionInDB' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionInDB', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionInDB', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionInDB';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionInDB';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4354,7 +4354,7 @@ class ProductApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionInDB',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionInDB',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4362,7 +4362,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4414,7 +4414,7 @@ class ProductApi
      */
     public function readUserProductDescriptionsApiV1ProductMyReviewsGetAsyncWithHttpInfo($score = null, $name__ilike = null, $brand_name__ilike = null, $order_by = 'score,name,brand_name,created_at,brand_description_bool,product_history_description_bool,technologies_bool', $limit = 50, $offset = 0)
     {
-        $returnType = '\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionInDB';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionInDB';
         $request = $this->readUserProductDescriptionsApiV1ProductMyReviewsGetRequest($score, $name__ilike, $brand_name__ilike, $order_by, $limit, $offset);
 
         return $this->client
@@ -4622,9 +4622,9 @@ class ProductApi
      *
      * @param  string $description_id description_id (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\BrandDescription|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\BrandDescription|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function regenerateBrandDescriptionApiV1ProductRegenerateBrandDescriptionDescriptionIdPost($description_id)
     {
@@ -4639,9 +4639,9 @@ class ProductApi
      *
      * @param  string $description_id (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\BrandDescription|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\BrandDescription|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function regenerateBrandDescriptionApiV1ProductRegenerateBrandDescriptionDescriptionIdPostWithHttpInfo($description_id)
     {
@@ -4684,32 +4684,32 @@ class ProductApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\BrandDescription' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\BrandDescription' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\BrandDescription', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\BrandDescription', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\BrandDescription';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\BrandDescription';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4727,7 +4727,7 @@ class ProductApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\BrandDescription',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\BrandDescription',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4735,7 +4735,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4777,7 +4777,7 @@ class ProductApi
      */
     public function regenerateBrandDescriptionApiV1ProductRegenerateBrandDescriptionDescriptionIdPostAsyncWithHttpInfo($description_id)
     {
-        $returnType = '\OpenAPI\Client\Model\BrandDescription';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\BrandDescription';
         $request = $this->regenerateBrandDescriptionApiV1ProductRegenerateBrandDescriptionDescriptionIdPostRequest($description_id);
 
         return $this->client
@@ -4917,9 +4917,9 @@ class ProductApi
      *
      * @param  string $description_id description_id (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProductDescription|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\ProductDescription|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function regenerateDescriptionApiV1ProductRegenerateDescriptionDescriptionIdPost($description_id)
     {
@@ -4934,9 +4934,9 @@ class ProductApi
      *
      * @param  string $description_id (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProductDescription|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\ProductDescription|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function regenerateDescriptionApiV1ProductRegenerateDescriptionDescriptionIdPostWithHttpInfo($description_id)
     {
@@ -4979,32 +4979,32 @@ class ProductApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ProductDescription' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\ProductDescription' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProductDescription', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\ProductDescription', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProductDescription';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\ProductDescription';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5022,7 +5022,7 @@ class ProductApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProductDescription',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\ProductDescription',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5030,7 +5030,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5072,7 +5072,7 @@ class ProductApi
      */
     public function regenerateDescriptionApiV1ProductRegenerateDescriptionDescriptionIdPostAsyncWithHttpInfo($description_id)
     {
-        $returnType = '\OpenAPI\Client\Model\ProductDescription';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\ProductDescription';
         $request = $this->regenerateDescriptionApiV1ProductRegenerateDescriptionDescriptionIdPostRequest($description_id);
 
         return $this->client
@@ -5212,9 +5212,9 @@ class ProductApi
      *
      * @param  string $description_id description_id (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return mixed|\OpenAPI\Client\Model\HTTPValidationError
+     * @return mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function regenerateEmptyApiV1ProductRegenerateEmptyDescriptionDescriptionIdPost($description_id)
     {
@@ -5229,9 +5229,9 @@ class ProductApi
      *
      * @param  string $description_id (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of mixed|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function regenerateEmptyApiV1ProductRegenerateEmptyDescriptionDescriptionIdPostWithHttpInfo($description_id)
     {
@@ -5286,14 +5286,14 @@ class ProductApi
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -5325,7 +5325,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5507,9 +5507,9 @@ class ProductApi
      *
      * @param  string $description_id description_id (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProductHistory|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\ProductHistory|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function regenerateHistoryDescriptionApiV1ProductRegenerateHistoryDescriptionDescriptionIdPost($description_id)
     {
@@ -5524,9 +5524,9 @@ class ProductApi
      *
      * @param  string $description_id (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProductHistory|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\ProductHistory|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function regenerateHistoryDescriptionApiV1ProductRegenerateHistoryDescriptionDescriptionIdPostWithHttpInfo($description_id)
     {
@@ -5569,32 +5569,32 @@ class ProductApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ProductHistory' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\ProductHistory' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProductHistory', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\ProductHistory', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProductHistory';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\ProductHistory';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5612,7 +5612,7 @@ class ProductApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProductHistory',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\ProductHistory',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5620,7 +5620,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5662,7 +5662,7 @@ class ProductApi
      */
     public function regenerateHistoryDescriptionApiV1ProductRegenerateHistoryDescriptionDescriptionIdPostAsyncWithHttpInfo($description_id)
     {
-        $returnType = '\OpenAPI\Client\Model\ProductHistory';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\ProductHistory';
         $request = $this->regenerateHistoryDescriptionApiV1ProductRegenerateHistoryDescriptionDescriptionIdPostRequest($description_id);
 
         return $this->client
@@ -5802,9 +5802,9 @@ class ProductApi
      *
      * @param  string $description_id description_id (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Technologies|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\Technologies|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function regenerateTechnologyApiV1ProductRegenerateTechnologiesDescriptionDescriptionIdPost($description_id)
     {
@@ -5819,9 +5819,9 @@ class ProductApi
      *
      * @param  string $description_id (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Technologies|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\Technologies|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function regenerateTechnologyApiV1ProductRegenerateTechnologiesDescriptionDescriptionIdPostWithHttpInfo($description_id)
     {
@@ -5864,32 +5864,32 @@ class ProductApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Technologies' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\Technologies' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Technologies', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\Technologies', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Technologies';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Technologies';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5907,7 +5907,7 @@ class ProductApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Technologies',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\Technologies',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5915,7 +5915,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5957,7 +5957,7 @@ class ProductApi
      */
     public function regenerateTechnologyApiV1ProductRegenerateTechnologiesDescriptionDescriptionIdPostAsyncWithHttpInfo($description_id)
     {
-        $returnType = '\OpenAPI\Client\Model\Technologies';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Technologies';
         $request = $this->regenerateTechnologyApiV1ProductRegenerateTechnologiesDescriptionDescriptionIdPostRequest($description_id);
 
         return $this->client
@@ -6096,11 +6096,11 @@ class ProductApi
      * Review Brand Description
      *
      * @param  string $description_id description_id (required)
-     * @param  \OpenAPI\Client\Model\BrandDescriptionUpdate $brand_description_update brand_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate $brand_description_update brand_description_update (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\BrandDescriptionUpdate|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function reviewBrandDescriptionApiV1ProductBrandDescriptionIdReviewPost($description_id, $brand_description_update)
     {
@@ -6114,11 +6114,11 @@ class ProductApi
      * Review Brand Description
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\BrandDescriptionUpdate $brand_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate $brand_description_update (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\BrandDescriptionUpdate|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function reviewBrandDescriptionApiV1ProductBrandDescriptionIdReviewPostWithHttpInfo($description_id, $brand_description_update)
     {
@@ -6161,32 +6161,32 @@ class ProductApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\BrandDescriptionUpdate' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\BrandDescriptionUpdate', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\BrandDescriptionUpdate';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -6204,7 +6204,7 @@ class ProductApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\BrandDescriptionUpdate',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6212,7 +6212,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6228,7 +6228,7 @@ class ProductApi
      * Review Brand Description
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\BrandDescriptionUpdate $brand_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate $brand_description_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6249,14 +6249,14 @@ class ProductApi
      * Review Brand Description
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\BrandDescriptionUpdate $brand_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate $brand_description_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function reviewBrandDescriptionApiV1ProductBrandDescriptionIdReviewPostAsyncWithHttpInfo($description_id, $brand_description_update)
     {
-        $returnType = '\OpenAPI\Client\Model\BrandDescriptionUpdate';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate';
         $request = $this->reviewBrandDescriptionApiV1ProductBrandDescriptionIdReviewPostRequest($description_id, $brand_description_update);
 
         return $this->client
@@ -6296,7 +6296,7 @@ class ProductApi
      * Create request for operation 'reviewBrandDescriptionApiV1ProductBrandDescriptionIdReviewPost'
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\BrandDescriptionUpdate $brand_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate $brand_description_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -6408,11 +6408,11 @@ class ProductApi
      * Review Description
      *
      * @param  string $description_id description_id (required)
-     * @param  \OpenAPI\Client\Model\ProductDescriptionUpdate $product_description_update product_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate $product_description_update product_description_update (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProductDescriptionUpdate|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function reviewDescriptionApiV1ProductDescriptionDescriptionIdReviewPost($description_id, $product_description_update)
     {
@@ -6426,11 +6426,11 @@ class ProductApi
      * Review Description
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\ProductDescriptionUpdate $product_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate $product_description_update (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProductDescriptionUpdate|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function reviewDescriptionApiV1ProductDescriptionDescriptionIdReviewPostWithHttpInfo($description_id, $product_description_update)
     {
@@ -6473,32 +6473,32 @@ class ProductApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ProductDescriptionUpdate' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProductDescriptionUpdate', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProductDescriptionUpdate';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -6516,7 +6516,7 @@ class ProductApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProductDescriptionUpdate',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6524,7 +6524,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6540,7 +6540,7 @@ class ProductApi
      * Review Description
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\ProductDescriptionUpdate $product_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate $product_description_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6561,14 +6561,14 @@ class ProductApi
      * Review Description
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\ProductDescriptionUpdate $product_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate $product_description_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function reviewDescriptionApiV1ProductDescriptionDescriptionIdReviewPostAsyncWithHttpInfo($description_id, $product_description_update)
     {
-        $returnType = '\OpenAPI\Client\Model\ProductDescriptionUpdate';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate';
         $request = $this->reviewDescriptionApiV1ProductDescriptionDescriptionIdReviewPostRequest($description_id, $product_description_update);
 
         return $this->client
@@ -6608,7 +6608,7 @@ class ProductApi
      * Create request for operation 'reviewDescriptionApiV1ProductDescriptionDescriptionIdReviewPost'
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\ProductDescriptionUpdate $product_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate $product_description_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -6720,11 +6720,11 @@ class ProductApi
      * Review History Description
      *
      * @param  string $description_id description_id (required)
-     * @param  \OpenAPI\Client\Model\ProductHistoryUpdate $product_history_update product_history_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate $product_history_update product_history_update (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProductHistoryUpdate|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function reviewHistoryDescriptionApiV1ProductHistoryDescriptionIdReviewPost($description_id, $product_history_update)
     {
@@ -6738,11 +6738,11 @@ class ProductApi
      * Review History Description
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\ProductHistoryUpdate $product_history_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate $product_history_update (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProductHistoryUpdate|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function reviewHistoryDescriptionApiV1ProductHistoryDescriptionIdReviewPostWithHttpInfo($description_id, $product_history_update)
     {
@@ -6785,32 +6785,32 @@ class ProductApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ProductHistoryUpdate' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProductHistoryUpdate', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProductHistoryUpdate';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -6828,7 +6828,7 @@ class ProductApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProductHistoryUpdate',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6836,7 +6836,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6852,7 +6852,7 @@ class ProductApi
      * Review History Description
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\ProductHistoryUpdate $product_history_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate $product_history_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6873,14 +6873,14 @@ class ProductApi
      * Review History Description
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\ProductHistoryUpdate $product_history_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate $product_history_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function reviewHistoryDescriptionApiV1ProductHistoryDescriptionIdReviewPostAsyncWithHttpInfo($description_id, $product_history_update)
     {
-        $returnType = '\OpenAPI\Client\Model\ProductHistoryUpdate';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate';
         $request = $this->reviewHistoryDescriptionApiV1ProductHistoryDescriptionIdReviewPostRequest($description_id, $product_history_update);
 
         return $this->client
@@ -6920,7 +6920,7 @@ class ProductApi
      * Create request for operation 'reviewHistoryDescriptionApiV1ProductHistoryDescriptionIdReviewPost'
      *
      * @param  string $description_id (required)
-     * @param  \OpenAPI\Client\Model\ProductHistoryUpdate $product_history_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate $product_history_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -7034,9 +7034,9 @@ class ProductApi
      * @param  string $description_id description_id (required)
      * @param  string $language language (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return mixed|\OpenAPI\Client\Model\HTTPValidationError
+     * @return mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function translateDescriptionApiV1ProductTranslateDescriptionDescriptionIdPost($description_id, $language)
     {
@@ -7052,9 +7052,9 @@ class ProductApi
      * @param  string $description_id (required)
      * @param  string $language (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of mixed|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function translateDescriptionApiV1ProductTranslateDescriptionDescriptionIdPostWithHttpInfo($description_id, $language)
     {
@@ -7109,14 +7109,14 @@ class ProductApi
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -7148,7 +7148,7 @@ class ProductApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);

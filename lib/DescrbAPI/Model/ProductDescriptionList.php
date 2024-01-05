@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  AkeneoPresales\DescrbAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace AkeneoPresales\DescrbAPI\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \AkeneoPresales\DescrbAPI\Client\ObjectSerializer;
 
 /**
  * ProductDescriptionList Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  AkeneoPresales\DescrbAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>

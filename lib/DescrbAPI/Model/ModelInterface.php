@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client\Model
+ * @package  AkeneoPresales\DescrbAPI\Client\Model
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -31,7 +31,7 @@ namespace AkeneoPresales\DescrbAPI\Client\Model;
 /**
  * Interface abstracting model access.
  *
- * @package OpenAPI\Client\Model
+ * @package AkeneoPresales\DescrbAPI\Client\Model
  * @author  OpenAPI Generator team
  */
 interface ModelInterface

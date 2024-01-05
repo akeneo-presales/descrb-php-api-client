@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  AkeneoPresales\DescrbAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -43,7 +43,7 @@ use AkeneoPresales\DescrbAPI\Client\ObjectSerializer;
  * ContactApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  AkeneoPresales\DescrbAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -126,9 +126,9 @@ class ContactApi
      * @param  string $message Email Message (required)
      * @param  string $phone_number Phone Number (optional, default to '')
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return mixed|\OpenAPI\Client\Model\HTTPValidationError
+     * @return mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function contactFormApiV1ContactPost($language, $name, $email, $message, $phone_number = '')
     {
@@ -147,9 +147,9 @@ class ContactApi
      * @param  string $message Email Message (required)
      * @param  string $phone_number Phone Number (optional, default to '')
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of mixed|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function contactFormApiV1ContactPostWithHttpInfo($language, $name, $email, $message, $phone_number = '')
     {
@@ -204,14 +204,14 @@ class ContactApi
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -243,7 +243,7 @@ class ContactApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  AkeneoPresales\DescrbAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace AkeneoPresales\DescrbAPI\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \AkeneoPresales\DescrbAPI\Client\ObjectSerializer;
 
 /**
  * LimitOffsetPageUser Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  AkeneoPresales\DescrbAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -59,7 +59,7 @@ class LimitOffsetPageUser implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\OpenAPI\Client\Model\User[]',
+        'items' => '\AkeneoPresales\DescrbAPI\Client\Model\User[]',
         'total' => 'int',
         'limit' => 'int',
         'offset' => 'int'
@@ -244,7 +244,7 @@ class LimitOffsetPageUser implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets items
      *
-     * @return \OpenAPI\Client\Model\User[]
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\User[]
      */
     public function getItems()
     {
@@ -254,7 +254,7 @@ class LimitOffsetPageUser implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets items
      *
-     * @param \OpenAPI\Client\Model\User[] $items items
+     * @param \AkeneoPresales\DescrbAPI\Client\Model\User[] $items items
      *
      * @return self
      */

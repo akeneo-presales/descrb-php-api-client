@@ -1,4 +1,4 @@
-# OpenAPI\Client\UsersApi
+# AkeneoPresales\DescrbAPI\Client\UsersApi
 
 All URIs are relative to http://localhost.
 
@@ -28,7 +28,7 @@ Method | HTTP request | Description
 ## `changeUserLanguageApiV1UsersLanguagePatch()`
 
 ```php
-changeUserLanguageApiV1UsersLanguagePatch($language): \OpenAPI\Client\Model\User
+changeUserLanguageApiV1UsersLanguagePatch($language): \AkeneoPresales\DescrbAPI\Client\Model\User
 ```
 
 Change User Language
@@ -41,10 +41,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\User**](../Model/User.md)
+[**\AkeneoPresales\DescrbAPI\Client\Model\User**](../Model/User.md)
 
 ### Authorization
 
@@ -99,10 +99,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -144,7 +144,7 @@ Name | Type | Description  | Notes
 ## `createUserApiV1UsersCreatePost()`
 
 ```php
-createUserApiV1UsersCreatePost($user_create): \OpenAPI\Client\Model\User
+createUserApiV1UsersCreatePost($user_create): \AkeneoPresales\DescrbAPI\Client\Model\User
 ```
 
 Create User
@@ -159,16 +159,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$user_create = new \OpenAPI\Client\Model\UserCreate(); // \OpenAPI\Client\Model\UserCreate
+$user_create = new \AkeneoPresales\DescrbAPI\Client\Model\UserCreate(); // \AkeneoPresales\DescrbAPI\Client\Model\UserCreate
 
 try {
     $result = $apiInstance->createUserApiV1UsersCreatePost($user_create);
@@ -182,11 +182,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **user_create** | [**\OpenAPI\Client\Model\UserCreate**](../Model/UserCreate.md)|  |
+ **user_create** | [**\AkeneoPresales\DescrbAPI\Client\Model\UserCreate**](../Model/UserCreate.md)|  |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\User**](../Model/User.md)
+[**\AkeneoPresales\DescrbAPI\Client\Model\User**](../Model/User.md)
 
 ### Authorization
 
@@ -204,7 +204,7 @@ Name | Type | Description  | Notes
 ## `createUserProfileApiV1UsersPost()`
 
 ```php
-createUserProfileApiV1UsersPost($body_create_user_profile_api_v1_users_post): \OpenAPI\Client\Model\User
+createUserProfileApiV1UsersPost($body_create_user_profile_api_v1_users_post): \AkeneoPresales\DescrbAPI\Client\Model\User
 ```
 
 Create User Profile
@@ -219,12 +219,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body_create_user_profile_api_v1_users_post = new \OpenAPI\Client\Model\BodyCreateUserProfileApiV1UsersPost(); // \OpenAPI\Client\Model\BodyCreateUserProfileApiV1UsersPost
+$body_create_user_profile_api_v1_users_post = new \AkeneoPresales\DescrbAPI\Client\Model\BodyCreateUserProfileApiV1UsersPost(); // \AkeneoPresales\DescrbAPI\Client\Model\BodyCreateUserProfileApiV1UsersPost
 
 try {
     $result = $apiInstance->createUserProfileApiV1UsersPost($body_create_user_profile_api_v1_users_post);
@@ -238,11 +238,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body_create_user_profile_api_v1_users_post** | [**\OpenAPI\Client\Model\BodyCreateUserProfileApiV1UsersPost**](../Model/BodyCreateUserProfileApiV1UsersPost.md)|  |
+ **body_create_user_profile_api_v1_users_post** | [**\AkeneoPresales\DescrbAPI\Client\Model\BodyCreateUserProfileApiV1UsersPost**](../Model/BodyCreateUserProfileApiV1UsersPost.md)|  |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\User**](../Model/User.md)
+[**\AkeneoPresales\DescrbAPI\Client\Model\User**](../Model/User.md)
 
 ### Authorization
 
@@ -273,10 +273,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -328,10 +328,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -383,10 +383,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -425,7 +425,7 @@ This endpoint does not need any parameter.
 ## `patchUserApiV1UsersPatch()`
 
 ```php
-patchUserApiV1UsersPatch($user_in_db): \OpenAPI\Client\Model\User
+patchUserApiV1UsersPatch($user_in_db): \AkeneoPresales\DescrbAPI\Client\Model\User
 ```
 
 Patch User
@@ -440,16 +440,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$user_in_db = new \OpenAPI\Client\Model\UserInDB(); // \OpenAPI\Client\Model\UserInDB
+$user_in_db = new \AkeneoPresales\DescrbAPI\Client\Model\UserInDB(); // \AkeneoPresales\DescrbAPI\Client\Model\UserInDB
 
 try {
     $result = $apiInstance->patchUserApiV1UsersPatch($user_in_db);
@@ -463,11 +463,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **user_in_db** | [**\OpenAPI\Client\Model\UserInDB**](../Model/UserInDB.md)|  |
+ **user_in_db** | [**\AkeneoPresales\DescrbAPI\Client\Model\UserInDB**](../Model/UserInDB.md)|  |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\User**](../Model/User.md)
+[**\AkeneoPresales\DescrbAPI\Client\Model\User**](../Model/User.md)
 
 ### Authorization
 
@@ -485,7 +485,7 @@ Name | Type | Description  | Notes
 ## `readAllUsersApiV1UsersAllGet()`
 
 ```php
-readAllUsersApiV1UsersAllGet($id, $full_name__ilike, $email__ilike, $is_active, $order_by, $limit, $offset): \OpenAPI\Client\Model\LimitOffsetPageUser
+readAllUsersApiV1UsersAllGet($id, $full_name__ilike, $email__ilike, $is_active, $order_by, $limit, $offset): \AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageUser
 ```
 
 Read All Users
@@ -500,10 +500,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -539,7 +539,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\LimitOffsetPageUser**](../Model/LimitOffsetPageUser.md)
+[**\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageUser**](../Model/LimitOffsetPageUser.md)
 
 ### Authorization
 
@@ -557,7 +557,7 @@ Name | Type | Description  | Notes
 ## `readUserApiV1UsersGet()`
 
 ```php
-readUserApiV1UsersGet(): \OpenAPI\Client\Model\User
+readUserApiV1UsersGet(): \AkeneoPresales\DescrbAPI\Client\Model\User
 ```
 
 Read User
@@ -572,10 +572,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -596,7 +596,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\User**](../Model/User.md)
+[**\AkeneoPresales\DescrbAPI\Client\Model\User**](../Model/User.md)
 
 ### Authorization
 
@@ -629,10 +629,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -671,7 +671,7 @@ This endpoint does not need any parameter.
 ## `readUserDescriptionsApiV1UsersUserIdDescriptionsGet()`
 
 ```php
-readUserDescriptionsApiV1UsersUserIdDescriptionsGet($user_id, $score, $name__ilike, $brand_name__ilike, $order_by, $limit, $offset): \OpenAPI\Client\Model\LimitOffsetPageProductDescription
+readUserDescriptionsApiV1UsersUserIdDescriptionsGet($user_id, $score, $name__ilike, $brand_name__ilike, $order_by, $limit, $offset): \AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescription
 ```
 
 Read User Descriptions
@@ -686,10 +686,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -725,7 +725,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\LimitOffsetPageProductDescription**](../Model/LimitOffsetPageProductDescription.md)
+[**\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescription**](../Model/LimitOffsetPageProductDescription.md)
 
 ### Authorization
 
@@ -743,7 +743,7 @@ Name | Type | Description  | Notes
 ## `readUserNotReviewedDescriptionsApiV1UsersUserIdNotReviewedDescriptionsGet()`
 
 ```php
-readUserNotReviewedDescriptionsApiV1UsersUserIdNotReviewedDescriptionsGet($user_id, $limit, $offset): \OpenAPI\Client\Model\LimitOffsetPageProductDescriptionList
+readUserNotReviewedDescriptionsApiV1UsersUserIdNotReviewedDescriptionsGet($user_id, $limit, $offset): \AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionList
 ```
 
 Read User Not Reviewed Descriptions
@@ -758,10 +758,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -789,7 +789,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionList**](../Model/LimitOffsetPageProductDescriptionList.md)
+[**\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionList**](../Model/LimitOffsetPageProductDescriptionList.md)
 
 ### Authorization
 
@@ -807,7 +807,7 @@ Name | Type | Description  | Notes
 ## `readUserNotSeenDescriptionsApiV1UsersUserIdNotSeenDescriptionsGet()`
 
 ```php
-readUserNotSeenDescriptionsApiV1UsersUserIdNotSeenDescriptionsGet($user_id, $limit, $offset): \OpenAPI\Client\Model\LimitOffsetPageProductDescriptionList
+readUserNotSeenDescriptionsApiV1UsersUserIdNotSeenDescriptionsGet($user_id, $limit, $offset): \AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionList
 ```
 
 Read User Not Seen Descriptions
@@ -822,10 +822,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -853,7 +853,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionList**](../Model/LimitOffsetPageProductDescriptionList.md)
+[**\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionList**](../Model/LimitOffsetPageProductDescriptionList.md)
 
 ### Authorization
 
@@ -871,7 +871,7 @@ Name | Type | Description  | Notes
 ## `requestNewTotpApiV1UsersNewTotpPost()`
 
 ```php
-requestNewTotpApiV1UsersNewTotpPost(): \OpenAPI\Client\Model\NewTOTP
+requestNewTotpApiV1UsersNewTotpPost(): \AkeneoPresales\DescrbAPI\Client\Model\NewTOTP
 ```
 
 Request New Totp
@@ -886,10 +886,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -910,7 +910,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\NewTOTP**](../Model/NewTOTP.md)
+[**\AkeneoPresales\DescrbAPI\Client\Model\NewTOTP**](../Model/NewTOTP.md)
 
 ### Authorization
 
@@ -928,7 +928,7 @@ This endpoint does not need any parameter.
 ## `testEndpointApiV1UsersTesterGet()`
 
 ```php
-testEndpointApiV1UsersTesterGet(): \OpenAPI\Client\Model\Msg
+testEndpointApiV1UsersTesterGet(): \AkeneoPresales\DescrbAPI\Client\Model\Msg
 ```
 
 Test Endpoint
@@ -943,7 +943,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -963,7 +963,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Msg**](../Model/Msg.md)
+[**\AkeneoPresales\DescrbAPI\Client\Model\Msg**](../Model/Msg.md)
 
 ### Authorization
 
@@ -981,7 +981,7 @@ No authorization required
 ## `toggleStateApiV1UsersToggleStatePost()`
 
 ```php
-toggleStateApiV1UsersToggleStatePost($user_update): \OpenAPI\Client\Model\Msg
+toggleStateApiV1UsersToggleStatePost($user_update): \AkeneoPresales\DescrbAPI\Client\Model\Msg
 ```
 
 Toggle State
@@ -996,16 +996,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$user_update = new \OpenAPI\Client\Model\UserUpdate(); // \OpenAPI\Client\Model\UserUpdate
+$user_update = new \AkeneoPresales\DescrbAPI\Client\Model\UserUpdate(); // \AkeneoPresales\DescrbAPI\Client\Model\UserUpdate
 
 try {
     $result = $apiInstance->toggleStateApiV1UsersToggleStatePost($user_update);
@@ -1019,11 +1019,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **user_update** | [**\OpenAPI\Client\Model\UserUpdate**](../Model/UserUpdate.md)|  |
+ **user_update** | [**\AkeneoPresales\DescrbAPI\Client\Model\UserUpdate**](../Model/UserUpdate.md)|  |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Msg**](../Model/Msg.md)
+[**\AkeneoPresales\DescrbAPI\Client\Model\Msg**](../Model/Msg.md)
 
 ### Authorization
 
@@ -1041,7 +1041,7 @@ Name | Type | Description  | Notes
 ## `updateUserApiV1UsersPut()`
 
 ```php
-updateUserApiV1UsersPut($marketing_agreement, $terms_agreement, $profile_picture, $original, $password, $full_name, $email): \OpenAPI\Client\Model\User
+updateUserApiV1UsersPut($marketing_agreement, $terms_agreement, $profile_picture, $original, $password, $full_name, $email): \AkeneoPresales\DescrbAPI\Client\Model\User
 ```
 
 Update User
@@ -1056,10 +1056,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1067,7 +1067,7 @@ $apiInstance = new OpenAPI\Client\Api\UsersApi(
 );
 $marketing_agreement = True; // bool | Marketing agreement
 $terms_agreement = True; // bool | Terms agreement
-$profile_picture = new \OpenAPI\Client\Model\AnyOfFileString(); // AnyOfFileString | Profile picture
+$profile_picture = new \AkeneoPresales\DescrbAPI\Client\Model\AnyOfFileString(); // AnyOfFileString | Profile picture
 $original = ''; // string | Original password
 $password = 'password_example'; // string | New password
 $full_name = 'full_name_example'; // string | Full user name
@@ -1095,7 +1095,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\User**](../Model/User.md)
+[**\AkeneoPresales\DescrbAPI\Client\Model\User**](../Model/User.md)
 
 ### Authorization
 
@@ -1113,7 +1113,7 @@ Name | Type | Description  | Notes
 ## `validateEmailApiV1UsersValidateEmailPost()`
 
 ```php
-validateEmailApiV1UsersValidateEmailPost($body): \OpenAPI\Client\Model\Msg
+validateEmailApiV1UsersValidateEmailPost($body): \AkeneoPresales\DescrbAPI\Client\Model\Msg
 ```
 
 Validate Email
@@ -1128,10 +1128,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1155,7 +1155,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Msg**](../Model/Msg.md)
+[**\AkeneoPresales\DescrbAPI\Client\Model\Msg**](../Model/Msg.md)
 
 ### Authorization
 

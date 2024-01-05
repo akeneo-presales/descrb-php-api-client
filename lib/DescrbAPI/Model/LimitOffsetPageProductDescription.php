@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  AkeneoPresales\DescrbAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace AkeneoPresales\DescrbAPI\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \AkeneoPresales\DescrbAPI\Client\ObjectSerializer;
 
 /**
  * LimitOffsetPageProductDescription Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  AkeneoPresales\DescrbAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -59,7 +59,7 @@ class LimitOffsetPageProductDescription implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\OpenAPI\Client\Model\ProductDescription[]',
+        'items' => '\AkeneoPresales\DescrbAPI\Client\Model\ProductDescription[]',
         'total' => 'int',
         'limit' => 'int',
         'offset' => 'int'
@@ -244,7 +244,7 @@ class LimitOffsetPageProductDescription implements ModelInterface, ArrayAccess, 
     /**
      * Gets items
      *
-     * @return \OpenAPI\Client\Model\ProductDescription[]
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\ProductDescription[]
      */
     public function getItems()
     {
@@ -254,7 +254,7 @@ class LimitOffsetPageProductDescription implements ModelInterface, ArrayAccess, 
     /**
      * Sets items
      *
-     * @param \OpenAPI\Client\Model\ProductDescription[] $items items
+     * @param \AkeneoPresales\DescrbAPI\Client\Model\ProductDescription[] $items items
      *
      * @return self
      */

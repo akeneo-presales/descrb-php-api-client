@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**items** | [**\OpenAPI\Client\Model\ProductDescriptionList[]**](ProductDescriptionList.md) |  |
+**items** | [**\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionList[]**](ProductDescriptionList.md) |  |
 **total** | **int** |  |
 **limit** | **int** |  | [optional]
 **offset** | **int** |  | [optional]

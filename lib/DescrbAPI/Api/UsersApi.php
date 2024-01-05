@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  AkeneoPresales\DescrbAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -43,7 +43,7 @@ use AkeneoPresales\DescrbAPI\Client\ObjectSerializer;
  * UsersApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  AkeneoPresales\DescrbAPI\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -122,9 +122,9 @@ class UsersApi
      *
      * @param  string $language language (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\User|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\User|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function changeUserLanguageApiV1UsersLanguagePatch($language)
     {
@@ -139,9 +139,9 @@ class UsersApi
      *
      * @param  string $language (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\User|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\User|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function changeUserLanguageApiV1UsersLanguagePatchWithHttpInfo($language)
     {
@@ -184,32 +184,32 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\User' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\User' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\User', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\User', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\User';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\User';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -227,7 +227,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\User',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\User',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -235,7 +235,7 @@ class UsersApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -277,7 +277,7 @@ class UsersApi
      */
     public function changeUserLanguageApiV1UsersLanguagePatchAsyncWithHttpInfo($language)
     {
-        $returnType = '\OpenAPI\Client\Model\User';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\User';
         $request = $this->changeUserLanguageApiV1UsersLanguagePatchRequest($language);
 
         return $this->client
@@ -420,9 +420,9 @@ class UsersApi
      *
      * @param  bool $pro pro (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return mixed|\OpenAPI\Client\Model\HTTPValidationError
+     * @return mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function createTrialSubApiV1UsersGetTrialPatch($pro)
     {
@@ -437,9 +437,9 @@ class UsersApi
      *
      * @param  bool $pro (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of mixed|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function createTrialSubApiV1UsersGetTrialPatchWithHttpInfo($pro)
     {
@@ -494,14 +494,14 @@ class UsersApi
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -533,7 +533,7 @@ class UsersApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -716,11 +716,11 @@ class UsersApi
      *
      * Create User
      *
-     * @param  \OpenAPI\Client\Model\UserCreate $user_create user_create (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserCreate $user_create user_create (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\User|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\User|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function createUserApiV1UsersCreatePost($user_create)
     {
@@ -733,11 +733,11 @@ class UsersApi
      *
      * Create User
      *
-     * @param  \OpenAPI\Client\Model\UserCreate $user_create (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserCreate $user_create (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\User|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\User|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function createUserApiV1UsersCreatePostWithHttpInfo($user_create)
     {
@@ -780,32 +780,32 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\User' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\User' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\User', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\User', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\User';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\User';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -823,7 +823,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\User',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\User',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -831,7 +831,7 @@ class UsersApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -846,7 +846,7 @@ class UsersApi
      *
      * Create User
      *
-     * @param  \OpenAPI\Client\Model\UserCreate $user_create (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserCreate $user_create (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -866,14 +866,14 @@ class UsersApi
      *
      * Create User
      *
-     * @param  \OpenAPI\Client\Model\UserCreate $user_create (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserCreate $user_create (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createUserApiV1UsersCreatePostAsyncWithHttpInfo($user_create)
     {
-        $returnType = '\OpenAPI\Client\Model\User';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\User';
         $request = $this->createUserApiV1UsersCreatePostRequest($user_create);
 
         return $this->client
@@ -912,7 +912,7 @@ class UsersApi
     /**
      * Create request for operation 'createUserApiV1UsersCreatePost'
      *
-     * @param  \OpenAPI\Client\Model\UserCreate $user_create (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserCreate $user_create (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1009,11 +1009,11 @@ class UsersApi
      *
      * Create User Profile
      *
-     * @param  \OpenAPI\Client\Model\BodyCreateUserProfileApiV1UsersPost $body_create_user_profile_api_v1_users_post body_create_user_profile_api_v1_users_post (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BodyCreateUserProfileApiV1UsersPost $body_create_user_profile_api_v1_users_post body_create_user_profile_api_v1_users_post (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\User|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\User|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function createUserProfileApiV1UsersPost($body_create_user_profile_api_v1_users_post)
     {
@@ -1026,11 +1026,11 @@ class UsersApi
      *
      * Create User Profile
      *
-     * @param  \OpenAPI\Client\Model\BodyCreateUserProfileApiV1UsersPost $body_create_user_profile_api_v1_users_post (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BodyCreateUserProfileApiV1UsersPost $body_create_user_profile_api_v1_users_post (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\User|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\User|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function createUserProfileApiV1UsersPostWithHttpInfo($body_create_user_profile_api_v1_users_post)
     {
@@ -1073,32 +1073,32 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\User' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\User' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\User', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\User', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\User';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\User';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1116,7 +1116,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\User',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\User',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1124,7 +1124,7 @@ class UsersApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1139,7 +1139,7 @@ class UsersApi
      *
      * Create User Profile
      *
-     * @param  \OpenAPI\Client\Model\BodyCreateUserProfileApiV1UsersPost $body_create_user_profile_api_v1_users_post (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BodyCreateUserProfileApiV1UsersPost $body_create_user_profile_api_v1_users_post (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1159,14 +1159,14 @@ class UsersApi
      *
      * Create User Profile
      *
-     * @param  \OpenAPI\Client\Model\BodyCreateUserProfileApiV1UsersPost $body_create_user_profile_api_v1_users_post (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BodyCreateUserProfileApiV1UsersPost $body_create_user_profile_api_v1_users_post (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createUserProfileApiV1UsersPostAsyncWithHttpInfo($body_create_user_profile_api_v1_users_post)
     {
-        $returnType = '\OpenAPI\Client\Model\User';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\User';
         $request = $this->createUserProfileApiV1UsersPostRequest($body_create_user_profile_api_v1_users_post);
 
         return $this->client
@@ -1205,7 +1205,7 @@ class UsersApi
     /**
      * Create request for operation 'createUserProfileApiV1UsersPost'
      *
-     * @param  \OpenAPI\Client\Model\BodyCreateUserProfileApiV1UsersPost $body_create_user_profile_api_v1_users_post (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BodyCreateUserProfileApiV1UsersPost $body_create_user_profile_api_v1_users_post (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1299,7 +1299,7 @@ class UsersApi
      * End Active Trial
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return mixed
      */
@@ -1315,7 +1315,7 @@ class UsersApi
      * End Active Trial
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of mixed, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1555,7 +1555,7 @@ class UsersApi
      * Generate Report
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return mixed
      */
@@ -1571,7 +1571,7 @@ class UsersApi
      * Generate Report
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of mixed, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1811,7 +1811,7 @@ class UsersApi
      * Mark Trial Notification As Seen
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return mixed
      */
@@ -1827,7 +1827,7 @@ class UsersApi
      * Mark Trial Notification As Seen
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of mixed, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2066,11 +2066,11 @@ class UsersApi
      *
      * Patch User
      *
-     * @param  \OpenAPI\Client\Model\UserInDB $user_in_db user_in_db (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserInDB $user_in_db user_in_db (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\User|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\User|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function patchUserApiV1UsersPatch($user_in_db)
     {
@@ -2083,11 +2083,11 @@ class UsersApi
      *
      * Patch User
      *
-     * @param  \OpenAPI\Client\Model\UserInDB $user_in_db (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserInDB $user_in_db (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\User|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\User|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function patchUserApiV1UsersPatchWithHttpInfo($user_in_db)
     {
@@ -2130,32 +2130,32 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\User' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\User' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\User', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\User', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\User';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\User';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2173,7 +2173,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\User',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\User',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2181,7 +2181,7 @@ class UsersApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2196,7 +2196,7 @@ class UsersApi
      *
      * Patch User
      *
-     * @param  \OpenAPI\Client\Model\UserInDB $user_in_db (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserInDB $user_in_db (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2216,14 +2216,14 @@ class UsersApi
      *
      * Patch User
      *
-     * @param  \OpenAPI\Client\Model\UserInDB $user_in_db (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserInDB $user_in_db (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function patchUserApiV1UsersPatchAsyncWithHttpInfo($user_in_db)
     {
-        $returnType = '\OpenAPI\Client\Model\User';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\User';
         $request = $this->patchUserApiV1UsersPatchRequest($user_in_db);
 
         return $this->client
@@ -2262,7 +2262,7 @@ class UsersApi
     /**
      * Create request for operation 'patchUserApiV1UsersPatch'
      *
-     * @param  \OpenAPI\Client\Model\UserInDB $user_in_db (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserInDB $user_in_db (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2367,9 +2367,9 @@ class UsersApi
      * @param  int $limit limit (optional, default to 50)
      * @param  int $offset offset (optional, default to 0)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\LimitOffsetPageUser|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageUser|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function readAllUsersApiV1UsersAllGet($id = null, $full_name__ilike = null, $email__ilike = null, $is_active = null, $order_by = 'full_name,email,is_active,is_superuser,count_descriptions,user_type', $limit = 50, $offset = 0)
     {
@@ -2390,9 +2390,9 @@ class UsersApi
      * @param  int $limit (optional, default to 50)
      * @param  int $offset (optional, default to 0)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\LimitOffsetPageUser|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageUser|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function readAllUsersApiV1UsersAllGetWithHttpInfo($id = null, $full_name__ilike = null, $email__ilike = null, $is_active = null, $order_by = 'full_name,email,is_active,is_superuser,count_descriptions,user_type', $limit = 50, $offset = 0)
     {
@@ -2435,32 +2435,32 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\LimitOffsetPageUser' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageUser' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\LimitOffsetPageUser', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageUser', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\LimitOffsetPageUser';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageUser';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2478,7 +2478,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\LimitOffsetPageUser',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageUser',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2486,7 +2486,7 @@ class UsersApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2540,7 +2540,7 @@ class UsersApi
      */
     public function readAllUsersApiV1UsersAllGetAsyncWithHttpInfo($id = null, $full_name__ilike = null, $email__ilike = null, $is_active = null, $order_by = 'full_name,email,is_active,is_superuser,count_descriptions,user_type', $limit = 50, $offset = 0)
     {
-        $returnType = '\OpenAPI\Client\Model\LimitOffsetPageUser';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageUser';
         $request = $this->readAllUsersApiV1UsersAllGetRequest($id, $full_name__ilike, $email__ilike, $is_active, $order_by, $limit, $offset);
 
         return $this->client
@@ -2759,9 +2759,9 @@ class UsersApi
      * Read User
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\User
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\User
      */
     public function readUserApiV1UsersGet()
     {
@@ -2775,9 +2775,9 @@ class UsersApi
      * Read User
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\User, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\User, HTTP status code, HTTP response headers (array of strings)
      */
     public function readUserApiV1UsersGetWithHttpInfo()
     {
@@ -2820,20 +2820,20 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\User' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\User' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\User', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\User', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\User';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\User';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2851,7 +2851,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\User',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\User',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2891,7 +2891,7 @@ class UsersApi
      */
     public function readUserApiV1UsersGetAsyncWithHttpInfo()
     {
-        $returnType = '\OpenAPI\Client\Model\User';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\User';
         $request = $this->readUserApiV1UsersGetRequest();
 
         return $this->client
@@ -3015,7 +3015,7 @@ class UsersApi
      * Read User
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return mixed
      */
@@ -3031,7 +3031,7 @@ class UsersApi
      * Read User
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of mixed, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3278,9 +3278,9 @@ class UsersApi
      * @param  int $limit limit (optional, default to 50)
      * @param  int $offset offset (optional, default to 0)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\LimitOffsetPageProductDescription|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescription|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function readUserDescriptionsApiV1UsersUserIdDescriptionsGet($user_id, $score = null, $name__ilike = null, $brand_name__ilike = null, $order_by = 'score,name,brand_name,created_at,brand_description_bool,product_history_description_bool,technologies_bool', $limit = 50, $offset = 0)
     {
@@ -3301,9 +3301,9 @@ class UsersApi
      * @param  int $limit (optional, default to 50)
      * @param  int $offset (optional, default to 0)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\LimitOffsetPageProductDescription|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescription|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function readUserDescriptionsApiV1UsersUserIdDescriptionsGetWithHttpInfo($user_id, $score = null, $name__ilike = null, $brand_name__ilike = null, $order_by = 'score,name,brand_name,created_at,brand_description_bool,product_history_description_bool,technologies_bool', $limit = 50, $offset = 0)
     {
@@ -3346,32 +3346,32 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\LimitOffsetPageProductDescription' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescription' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\LimitOffsetPageProductDescription', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescription', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\LimitOffsetPageProductDescription';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescription';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3389,7 +3389,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\LimitOffsetPageProductDescription',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescription',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3397,7 +3397,7 @@ class UsersApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3451,7 +3451,7 @@ class UsersApi
      */
     public function readUserDescriptionsApiV1UsersUserIdDescriptionsGetAsyncWithHttpInfo($user_id, $score = null, $name__ilike = null, $brand_name__ilike = null, $order_by = 'score,name,brand_name,created_at,brand_description_bool,product_history_description_bool,technologies_bool', $limit = 50, $offset = 0)
     {
-        $returnType = '\OpenAPI\Client\Model\LimitOffsetPageProductDescription';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescription';
         $request = $this->readUserDescriptionsApiV1UsersUserIdDescriptionsGetRequest($user_id, $score, $name__ilike, $brand_name__ilike, $order_by, $limit, $offset);
 
         return $this->client
@@ -3676,9 +3676,9 @@ class UsersApi
      * @param  int $limit limit (optional, default to 50)
      * @param  int $offset offset (optional, default to 0)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\LimitOffsetPageProductDescriptionList|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionList|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function readUserNotReviewedDescriptionsApiV1UsersUserIdNotReviewedDescriptionsGet($user_id, $limit = 50, $offset = 0)
     {
@@ -3695,9 +3695,9 @@ class UsersApi
      * @param  int $limit (optional, default to 50)
      * @param  int $offset (optional, default to 0)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\LimitOffsetPageProductDescriptionList|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionList|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function readUserNotReviewedDescriptionsApiV1UsersUserIdNotReviewedDescriptionsGetWithHttpInfo($user_id, $limit = 50, $offset = 0)
     {
@@ -3740,32 +3740,32 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionList' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionList' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionList', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionList', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionList';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionList';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3783,7 +3783,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionList',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3791,7 +3791,7 @@ class UsersApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3837,7 +3837,7 @@ class UsersApi
      */
     public function readUserNotReviewedDescriptionsApiV1UsersUserIdNotReviewedDescriptionsGetAsyncWithHttpInfo($user_id, $limit = 50, $offset = 0)
     {
-        $returnType = '\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionList';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionList';
         $request = $this->readUserNotReviewedDescriptionsApiV1UsersUserIdNotReviewedDescriptionsGetRequest($user_id, $limit, $offset);
 
         return $this->client
@@ -4014,9 +4014,9 @@ class UsersApi
      * @param  int $limit limit (optional, default to 50)
      * @param  int $offset offset (optional, default to 0)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\LimitOffsetPageProductDescriptionList|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionList|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function readUserNotSeenDescriptionsApiV1UsersUserIdNotSeenDescriptionsGet($user_id, $limit = 50, $offset = 0)
     {
@@ -4033,9 +4033,9 @@ class UsersApi
      * @param  int $limit (optional, default to 50)
      * @param  int $offset (optional, default to 0)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\LimitOffsetPageProductDescriptionList|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionList|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function readUserNotSeenDescriptionsApiV1UsersUserIdNotSeenDescriptionsGetWithHttpInfo($user_id, $limit = 50, $offset = 0)
     {
@@ -4078,32 +4078,32 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionList' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionList' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionList', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionList', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionList';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionList';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4121,7 +4121,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionList',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4129,7 +4129,7 @@ class UsersApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4175,7 +4175,7 @@ class UsersApi
      */
     public function readUserNotSeenDescriptionsApiV1UsersUserIdNotSeenDescriptionsGetAsyncWithHttpInfo($user_id, $limit = 50, $offset = 0)
     {
-        $returnType = '\OpenAPI\Client\Model\LimitOffsetPageProductDescriptionList';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionList';
         $request = $this->readUserNotSeenDescriptionsApiV1UsersUserIdNotSeenDescriptionsGetRequest($user_id, $limit, $offset);
 
         return $this->client
@@ -4349,9 +4349,9 @@ class UsersApi
      * Request New Totp
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\NewTOTP
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\NewTOTP
      */
     public function requestNewTotpApiV1UsersNewTotpPost()
     {
@@ -4365,9 +4365,9 @@ class UsersApi
      * Request New Totp
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\NewTOTP, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\NewTOTP, HTTP status code, HTTP response headers (array of strings)
      */
     public function requestNewTotpApiV1UsersNewTotpPostWithHttpInfo()
     {
@@ -4410,20 +4410,20 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\NewTOTP' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\NewTOTP' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\NewTOTP', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\NewTOTP', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\NewTOTP';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\NewTOTP';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4441,7 +4441,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\NewTOTP',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\NewTOTP',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4481,7 +4481,7 @@ class UsersApi
      */
     public function requestNewTotpApiV1UsersNewTotpPostAsyncWithHttpInfo()
     {
-        $returnType = '\OpenAPI\Client\Model\NewTOTP';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\NewTOTP';
         $request = $this->requestNewTotpApiV1UsersNewTotpPostRequest();
 
         return $this->client
@@ -4605,9 +4605,9 @@ class UsersApi
      * Test Endpoint
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Msg
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\Msg
      */
     public function testEndpointApiV1UsersTesterGet()
     {
@@ -4621,9 +4621,9 @@ class UsersApi
      * Test Endpoint
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Msg, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\Msg, HTTP status code, HTTP response headers (array of strings)
      */
     public function testEndpointApiV1UsersTesterGetWithHttpInfo()
     {
@@ -4666,20 +4666,20 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Msg' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\Msg' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Msg', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\Msg', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Msg';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Msg';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4697,7 +4697,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Msg',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\Msg',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4737,7 +4737,7 @@ class UsersApi
      */
     public function testEndpointApiV1UsersTesterGetAsyncWithHttpInfo()
     {
-        $returnType = '\OpenAPI\Client\Model\Msg';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Msg';
         $request = $this->testEndpointApiV1UsersTesterGetRequest();
 
         return $this->client
@@ -4856,11 +4856,11 @@ class UsersApi
      *
      * Toggle State
      *
-     * @param  \OpenAPI\Client\Model\UserUpdate $user_update user_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserUpdate $user_update user_update (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Msg|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\Msg|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function toggleStateApiV1UsersToggleStatePost($user_update)
     {
@@ -4873,11 +4873,11 @@ class UsersApi
      *
      * Toggle State
      *
-     * @param  \OpenAPI\Client\Model\UserUpdate $user_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserUpdate $user_update (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Msg|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\Msg|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function toggleStateApiV1UsersToggleStatePostWithHttpInfo($user_update)
     {
@@ -4920,32 +4920,32 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Msg' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\Msg' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Msg', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\Msg', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Msg';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Msg';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4963,7 +4963,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Msg',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\Msg',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4971,7 +4971,7 @@ class UsersApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4986,7 +4986,7 @@ class UsersApi
      *
      * Toggle State
      *
-     * @param  \OpenAPI\Client\Model\UserUpdate $user_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserUpdate $user_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5006,14 +5006,14 @@ class UsersApi
      *
      * Toggle State
      *
-     * @param  \OpenAPI\Client\Model\UserUpdate $user_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserUpdate $user_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function toggleStateApiV1UsersToggleStatePostAsyncWithHttpInfo($user_update)
     {
-        $returnType = '\OpenAPI\Client\Model\Msg';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Msg';
         $request = $this->toggleStateApiV1UsersToggleStatePostRequest($user_update);
 
         return $this->client
@@ -5052,7 +5052,7 @@ class UsersApi
     /**
      * Create request for operation 'toggleStateApiV1UsersToggleStatePost'
      *
-     * @param  \OpenAPI\Client\Model\UserUpdate $user_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserUpdate $user_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -5157,9 +5157,9 @@ class UsersApi
      * @param  string $full_name Full user name (optional)
      * @param  string $email User email (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\User|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\User|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function updateUserApiV1UsersPut($marketing_agreement, $terms_agreement, $profile_picture = null, $original = '', $password = null, $full_name = null, $email = null)
     {
@@ -5180,9 +5180,9 @@ class UsersApi
      * @param  string $full_name Full user name (optional)
      * @param  string $email User email (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\User|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\User|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateUserApiV1UsersPutWithHttpInfo($marketing_agreement, $terms_agreement, $profile_picture = null, $original = '', $password = null, $full_name = null, $email = null)
     {
@@ -5225,32 +5225,32 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\User' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\User' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\User', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\User', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\User';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\User';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5268,7 +5268,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\User',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\User',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5276,7 +5276,7 @@ class UsersApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5330,7 +5330,7 @@ class UsersApi
      */
     public function updateUserApiV1UsersPutAsyncWithHttpInfo($marketing_agreement, $terms_agreement, $profile_picture = null, $original = '', $password = null, $full_name = null, $email = null)
     {
-        $returnType = '\OpenAPI\Client\Model\User';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\User';
         $request = $this->updateUserApiV1UsersPutRequest($marketing_agreement, $terms_agreement, $profile_picture, $original, $password, $full_name, $email);
 
         return $this->client
@@ -5502,9 +5502,9 @@ class UsersApi
      *
      * @param  object $body body (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Msg|\OpenAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Client\Model\Msg|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
      */
     public function validateEmailApiV1UsersValidateEmailPost($body)
     {
@@ -5519,9 +5519,9 @@ class UsersApi
      *
      * @param  object $body (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Msg|\OpenAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\Msg|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function validateEmailApiV1UsersValidateEmailPostWithHttpInfo($body)
     {
@@ -5564,32 +5564,32 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Msg' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\Msg' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Msg', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\Msg', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Msg';
+            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Msg';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5607,7 +5607,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Msg',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\Msg',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5615,7 +5615,7 @@ class UsersApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5657,7 +5657,7 @@ class UsersApi
      */
     public function validateEmailApiV1UsersValidateEmailPostAsyncWithHttpInfo($body)
     {
-        $returnType = '\OpenAPI\Client\Model\Msg';
+        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Msg';
         $request = $this->validateEmailApiV1UsersValidateEmailPostRequest($body);
 
         return $this->client

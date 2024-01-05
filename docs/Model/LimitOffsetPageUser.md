@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**items** | [**\OpenAPI\Client\Model\User[]**](User.md) |  |
+**items** | [**\AkeneoPresales\DescrbAPI\Client\Model\User[]**](User.md) |  |
 **total** | **int** |  |
 **limit** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
