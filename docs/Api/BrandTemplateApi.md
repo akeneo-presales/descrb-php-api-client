@@ -1,4 +1,4 @@
-# AkeneoPresales\DescrbAPI\Client\BrandTemplateApi
+# AkeneoPresales\DescrbAPI\BrandTemplateApi
 
 All URIs are relative to http://localhost.
 
@@ -28,16 +28,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\BrandTemplateApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\BrandTemplateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$brand_template_create = new \AkeneoPresales\DescrbAPI\Client\Model\BrandTemplateCreate(); // \AkeneoPresales\DescrbAPI\Client\Model\BrandTemplateCreate
+$brand_template_create = new \AkeneoPresales\DescrbAPI\Model\BrandTemplateCreate(); // \AkeneoPresales\DescrbAPI\Model\BrandTemplateCreate
 
 try {
     $result = $apiInstance->createTemplateApiV1BrandTemplatePost($brand_template_create);
@@ -51,7 +51,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **brand_template_create** | [**\AkeneoPresales\DescrbAPI\Client\Model\BrandTemplateCreate**](../Model/BrandTemplateCreate.md)|  |
+ **brand_template_create** | [**\AkeneoPresales\DescrbAPI\Model\BrandTemplateCreate**](../Model/BrandTemplateCreate.md)|  |
 
 ### Return type
 
@@ -88,10 +88,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\BrandTemplateApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\BrandTemplateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -133,7 +133,7 @@ Name | Type | Description  | Notes
 ## `editTemplateApiV1BrandTemplateTemplateTemplateIdPatch()`
 
 ```php
-editTemplateApiV1BrandTemplateTemplateTemplateIdPatch($template_id, $brand_template_update): \AkeneoPresales\DescrbAPI\Client\Model\BrandTemplate
+editTemplateApiV1BrandTemplateTemplateTemplateIdPatch($template_id, $brand_template_update): \AkeneoPresales\DescrbAPI\Model\BrandTemplate
 ```
 
 Edit Template
@@ -148,17 +148,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\BrandTemplateApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\BrandTemplateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $template_id = 'template_id_example'; // string
-$brand_template_update = new \AkeneoPresales\DescrbAPI\Client\Model\BrandTemplateUpdate(); // \AkeneoPresales\DescrbAPI\Client\Model\BrandTemplateUpdate
+$brand_template_update = new \AkeneoPresales\DescrbAPI\Model\BrandTemplateUpdate(); // \AkeneoPresales\DescrbAPI\Model\BrandTemplateUpdate
 
 try {
     $result = $apiInstance->editTemplateApiV1BrandTemplateTemplateTemplateIdPatch($template_id, $brand_template_update);
@@ -173,11 +173,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **template_id** | **string**|  |
- **brand_template_update** | [**\AkeneoPresales\DescrbAPI\Client\Model\BrandTemplateUpdate**](../Model/BrandTemplateUpdate.md)|  |
+ **brand_template_update** | [**\AkeneoPresales\DescrbAPI\Model\BrandTemplateUpdate**](../Model/BrandTemplateUpdate.md)|  |
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\BrandTemplate**](../Model/BrandTemplate.md)
+[**\AkeneoPresales\DescrbAPI\Model\BrandTemplate**](../Model/BrandTemplate.md)
 
 ### Authorization
 
@@ -210,10 +210,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\BrandTemplateApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\BrandTemplateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**items** | [**\AkeneoPresales\DescrbAPI\Client\Model\ProductDescription[]**](ProductDescription.md) |  |
+**items** | [**\AkeneoPresales\DescrbAPI\Model\ProductDescription[]**](ProductDescription.md) |  |
 **total** | **int** |  |
 **limit** | **int** |  | [optional]
 **offset** | **int** |  | [optional]

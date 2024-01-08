@@ -1,4 +1,4 @@
-# AkeneoPresales\DescrbAPI\Client\LandingApi
+# AkeneoPresales\DescrbAPI\LandingApi
 
 All URIs are relative to http://localhost.
 
@@ -23,7 +23,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\LandingApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\LandingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

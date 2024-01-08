@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace AkeneoPresales\DescrbAPI\Client\Model;
+namespace AkeneoPresales\DescrbAPI\Model;
 
 use \ArrayAccess;
-use \AkeneoPresales\DescrbAPI\Client\ObjectSerializer;
+use \AkeneoPresales\DescrbAPI\ObjectSerializer;
 
 /**
  * BodyCreateUserProfileApiV1UsersPost Class Doc Comment

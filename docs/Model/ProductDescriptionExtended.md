@@ -39,8 +39,8 @@ Name | Type | Description | Notes
 **product_history_description_bool** | **bool** |  | [optional]
 **technologies_bool** | **bool** |  | [optional]
 **seen_bool** | **bool** |  | [optional]
-**brand_description** | [**\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionInDB[]**](BrandDescriptionInDB.md) |  | [optional]
-**product_history_description** | [**\AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryInDB[]**](ProductHistoryInDB.md) |  | [optional]
-**technologies** | [**\AkeneoPresales\DescrbAPI\Client\Model\TechnologiesInDB**](TechnologiesInDB.md) |  | [optional]
+**brand_description** | [**\AkeneoPresales\DescrbAPI\Model\BrandDescriptionInDB[]**](BrandDescriptionInDB.md) |  | [optional]
+**product_history_description** | [**\AkeneoPresales\DescrbAPI\Model\ProductHistoryInDB[]**](ProductHistoryInDB.md) |  | [optional]
+**technologies** | [**\AkeneoPresales\DescrbAPI\Model\TechnologiesInDB**](TechnologiesInDB.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

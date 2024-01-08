@@ -20,6 +20,6 @@
         "friendsofphp/php-cs-fixer": "^2.12"
     },
     "autoload": {
-        "psr-4": { "AkeneoPresales\\DescrbAPI\\\\Client\\" : "lib/" }
+        "psr-4": { "AkeneoPresales\\": "lib/" }
     }
 }

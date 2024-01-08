@@ -1,4 +1,4 @@
-# AkeneoPresales\DescrbAPI\Client\BrandApi
+# AkeneoPresales\DescrbAPI\BrandApi
 
 All URIs are relative to http://localhost.
 
@@ -26,10 +26,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\BrandApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\BrandApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -83,7 +83,7 @@ Name | Type | Description  | Notes
 ## `reviewBrandDescriptionApiV1BrandBrandDescriptionIdReviewPost()`
 
 ```php
-reviewBrandDescriptionApiV1BrandBrandDescriptionIdReviewPost($brand_description_id, $brand_description_update): \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate
+reviewBrandDescriptionApiV1BrandBrandDescriptionIdReviewPost($brand_description_id, $brand_description_update): \AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate
 ```
 
 Review Brand Description
@@ -98,17 +98,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\BrandApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\BrandApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $brand_description_id = 'brand_description_id_example'; // string
-$brand_description_update = new \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate(); // \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate
+$brand_description_update = new \AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate(); // \AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate
 
 try {
     $result = $apiInstance->reviewBrandDescriptionApiV1BrandBrandDescriptionIdReviewPost($brand_description_id, $brand_description_update);
@@ -123,11 +123,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **brand_description_id** | **string**|  |
- **brand_description_update** | [**\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate**](../Model/BrandDescriptionUpdate.md)|  |
+ **brand_description_update** | [**\AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate**](../Model/BrandDescriptionUpdate.md)|  |
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate**](../Model/BrandDescriptionUpdate.md)
+[**\AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate**](../Model/BrandDescriptionUpdate.md)
 
 ### Authorization
 

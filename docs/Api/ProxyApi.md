@@ -1,4 +1,4 @@
-# AkeneoPresales\DescrbAPI\Client\ProxyApi
+# AkeneoPresales\DescrbAPI\ProxyApi
 
 All URIs are relative to http://localhost.
 
@@ -24,10 +24,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProxyApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProxyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -82,10 +82,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProxyApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProxyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

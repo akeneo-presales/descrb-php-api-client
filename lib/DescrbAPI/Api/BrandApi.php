@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace AkeneoPresales\DescrbAPI\Client\Api;
+namespace AkeneoPresales\DescrbAPI\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,10 +34,10 @@ use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AkeneoPresales\DescrbAPI\Client\ApiException;
-use AkeneoPresales\DescrbAPI\Client\Configuration;
-use AkeneoPresales\DescrbAPI\Client\HeaderSelector;
-use AkeneoPresales\DescrbAPI\Client\ObjectSerializer;
+use AkeneoPresales\DescrbAPI\ApiException;
+use AkeneoPresales\DescrbAPI\Configuration;
+use AkeneoPresales\DescrbAPI\HeaderSelector;
+use AkeneoPresales\DescrbAPI\ObjectSerializer;
 
 /**
  * BrandApi Class Doc Comment
@@ -128,9 +128,9 @@ class BrandApi
      * @param  string $data_language Data Source Language (optional, default to '')
      * @param  string $language_style Choose between Neutral, Casual, Specialist (optional, default to 'Neutral')
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
+     * @return mixed|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError
      */
     public function createBrandAdApiV1BrandPost($image = null, $photo_url = '', $brand_name = '', $length = 512, $language = 'pl', $data_language = '', $language_style = 'Neutral')
     {
@@ -151,9 +151,9 @@ class BrandApi
      * @param  string $data_language Data Source Language (optional, default to '')
      * @param  string $language_style Choose between Neutral, Casual, Specialist (optional, default to 'Neutral')
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of mixed|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function createBrandAdApiV1BrandPostWithHttpInfo($image = null, $photo_url = '', $brand_name = '', $length = 512, $language = 'pl', $data_language = '', $language_style = 'Neutral')
     {
@@ -208,14 +208,14 @@ class BrandApi
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -247,7 +247,7 @@ class BrandApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -468,11 +468,11 @@ class BrandApi
      * Review Brand Description
      *
      * @param  string $brand_description_id brand_description_id (required)
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate $brand_description_update brand_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate $brand_description_update brand_description_update (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError
      */
     public function reviewBrandDescriptionApiV1BrandBrandDescriptionIdReviewPost($brand_description_id, $brand_description_update)
     {
@@ -486,11 +486,11 @@ class BrandApi
      * Review Brand Description
      *
      * @param  string $brand_description_id (required)
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate $brand_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate $brand_description_update (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function reviewBrandDescriptionApiV1BrandBrandDescriptionIdReviewPostWithHttpInfo($brand_description_id, $brand_description_update)
     {
@@ -533,32 +533,32 @@ class BrandApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate';
+            $returnType = '\AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -576,7 +576,7 @@ class BrandApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate',
+                        '\AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -584,7 +584,7 @@ class BrandApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -600,7 +600,7 @@ class BrandApi
      * Review Brand Description
      *
      * @param  string $brand_description_id (required)
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate $brand_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate $brand_description_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -621,14 +621,14 @@ class BrandApi
      * Review Brand Description
      *
      * @param  string $brand_description_id (required)
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate $brand_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate $brand_description_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function reviewBrandDescriptionApiV1BrandBrandDescriptionIdReviewPostAsyncWithHttpInfo($brand_description_id, $brand_description_update)
     {
-        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate';
+        $returnType = '\AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate';
         $request = $this->reviewBrandDescriptionApiV1BrandBrandDescriptionIdReviewPostRequest($brand_description_id, $brand_description_update);
 
         return $this->client
@@ -668,7 +668,7 @@ class BrandApi
      * Create request for operation 'reviewBrandDescriptionApiV1BrandBrandDescriptionIdReviewPost'
      *
      * @param  string $brand_description_id (required)
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate $brand_description_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate $brand_description_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

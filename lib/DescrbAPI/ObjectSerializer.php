@@ -28,7 +28,7 @@
 
 namespace AkeneoPresales\DescrbAPI\Client;
 
-use AkeneoPresales\DescrbAPI\Client\Model\ModelInterface;
+use AkeneoPresales\DescrbAPI\Model\ModelInterface;
 
 /**
  * ObjectSerializer Class Doc Comment
@@ -367,7 +367,7 @@ class ObjectSerializer
             // If a discriminator is defined and points to a valid subclass, use it.
             $discriminator = $class::DISCRIMINATOR;
             if (!empty($discriminator) && isset($data->{$discriminator}) && is_string($data->{$discriminator})) {
-                $subclass = '\AkeneoPresales\DescrbAPI\Client\Model\\' . $data->{$discriminator};
+                $subclass = '\AkeneoPresales\DescrbAPI\Model\\' . $data->{$discriminator};
                 if (is_subclass_of($subclass, $class)) {
                     $class = $subclass;
                 }

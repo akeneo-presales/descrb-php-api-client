@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace AkeneoPresales\DescrbAPI\Client\Api;
+namespace AkeneoPresales\DescrbAPI\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,10 +34,10 @@ use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AkeneoPresales\DescrbAPI\Client\ApiException;
-use AkeneoPresales\DescrbAPI\Client\Configuration;
-use AkeneoPresales\DescrbAPI\Client\HeaderSelector;
-use AkeneoPresales\DescrbAPI\Client\ObjectSerializer;
+use AkeneoPresales\DescrbAPI\ApiException;
+use AkeneoPresales\DescrbAPI\Configuration;
+use AkeneoPresales\DescrbAPI\HeaderSelector;
+use AkeneoPresales\DescrbAPI\ObjectSerializer;
 
 /**
  * ProxyApi Class Doc Comment
@@ -122,9 +122,9 @@ class ProxyApi
      *
      * @param  string $path path (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
+     * @return mixed|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError
      */
     public function proxyGetRequestApiV1ProxyPathGet($path)
     {
@@ -139,9 +139,9 @@ class ProxyApi
      *
      * @param  string $path (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of mixed|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function proxyGetRequestApiV1ProxyPathGetWithHttpInfo($path)
     {
@@ -196,14 +196,14 @@ class ProxyApi
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -235,7 +235,7 @@ class ProxyApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -424,9 +424,9 @@ class ProxyApi
      *
      * @param  string $path path (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
+     * @return mixed|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError
      */
     public function proxyPostRequestApiV1ProxyPathPost($path)
     {
@@ -441,9 +441,9 @@ class ProxyApi
      *
      * @param  string $path (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of mixed|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function proxyPostRequestApiV1ProxyPathPostWithHttpInfo($path)
     {
@@ -498,14 +498,14 @@ class ProxyApi
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -537,7 +537,7 @@ class ProxyApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);

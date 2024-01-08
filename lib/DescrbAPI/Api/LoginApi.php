@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace AkeneoPresales\DescrbAPI\Client\Api;
+namespace AkeneoPresales\DescrbAPI\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,10 +34,10 @@ use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AkeneoPresales\DescrbAPI\Client\ApiException;
-use AkeneoPresales\DescrbAPI\Client\Configuration;
-use AkeneoPresales\DescrbAPI\Client\HeaderSelector;
-use AkeneoPresales\DescrbAPI\Client\ObjectSerializer;
+use AkeneoPresales\DescrbAPI\ApiException;
+use AkeneoPresales\DescrbAPI\Configuration;
+use AkeneoPresales\DescrbAPI\HeaderSelector;
+use AkeneoPresales\DescrbAPI\ObjectSerializer;
 
 /**
  * LoginApi Class Doc Comment
@@ -121,7 +121,7 @@ class LoginApi
      * Auth Via Facebook
      *
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return mixed
      */
@@ -137,7 +137,7 @@ class LoginApi
      * Auth Via Facebook
      *
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of mixed, HTTP status code, HTTP response headers (array of strings)
      */
@@ -373,7 +373,7 @@ class LoginApi
      * Auth Via Google
      *
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return mixed
      */
@@ -389,7 +389,7 @@ class LoginApi
      * Auth Via Google
      *
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of mixed, HTTP status code, HTTP response headers (array of strings)
      */
@@ -625,7 +625,7 @@ class LoginApi
      * Auth Via Linkedin
      *
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return mixed
      */
@@ -641,7 +641,7 @@ class LoginApi
      * Auth Via Linkedin
      *
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of mixed, HTTP status code, HTTP response headers (array of strings)
      */
@@ -876,11 +876,11 @@ class LoginApi
      *
      * Disable Totp Authentication
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserUpdate $user_update user_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\UserUpdate $user_update user_update (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AkeneoPresales\DescrbAPI\Client\Model\Msg|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Model\Msg|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError
      */
     public function disableTotpAuthenticationApiV1LoginTotpDelete($user_update)
     {
@@ -893,11 +893,11 @@ class LoginApi
      *
      * Disable Totp Authentication
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserUpdate $user_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\UserUpdate $user_update (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\Msg|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Model\Msg|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function disableTotpAuthenticationApiV1LoginTotpDeleteWithHttpInfo($user_update)
     {
@@ -940,32 +940,32 @@ class LoginApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\Msg' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\Msg' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\Msg', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\Msg', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Msg';
+            $returnType = '\AkeneoPresales\DescrbAPI\Model\Msg';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -983,7 +983,7 @@ class LoginApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\Msg',
+                        '\AkeneoPresales\DescrbAPI\Model\Msg',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -991,7 +991,7 @@ class LoginApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1006,7 +1006,7 @@ class LoginApi
      *
      * Disable Totp Authentication
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserUpdate $user_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\UserUpdate $user_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1026,14 +1026,14 @@ class LoginApi
      *
      * Disable Totp Authentication
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserUpdate $user_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\UserUpdate $user_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function disableTotpAuthenticationApiV1LoginTotpDeleteAsyncWithHttpInfo($user_update)
     {
-        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Msg';
+        $returnType = '\AkeneoPresales\DescrbAPI\Model\Msg';
         $request = $this->disableTotpAuthenticationApiV1LoginTotpDeleteRequest($user_update);
 
         return $this->client
@@ -1072,7 +1072,7 @@ class LoginApi
     /**
      * Create request for operation 'disableTotpAuthenticationApiV1LoginTotpDelete'
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserUpdate $user_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\UserUpdate $user_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1169,11 +1169,11 @@ class LoginApi
      *
      * Enable Totp Authentication
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\EnableTOTP $enable_totp enable_totp (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\EnableTOTP $enable_totp enable_totp (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AkeneoPresales\DescrbAPI\Client\Model\Msg|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Model\Msg|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError
      */
     public function enableTotpAuthenticationApiV1LoginTotpPut($enable_totp)
     {
@@ -1186,11 +1186,11 @@ class LoginApi
      *
      * Enable Totp Authentication
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\EnableTOTP $enable_totp (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\EnableTOTP $enable_totp (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\Msg|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Model\Msg|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function enableTotpAuthenticationApiV1LoginTotpPutWithHttpInfo($enable_totp)
     {
@@ -1233,32 +1233,32 @@ class LoginApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\Msg' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\Msg' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\Msg', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\Msg', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Msg';
+            $returnType = '\AkeneoPresales\DescrbAPI\Model\Msg';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1276,7 +1276,7 @@ class LoginApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\Msg',
+                        '\AkeneoPresales\DescrbAPI\Model\Msg',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1284,7 +1284,7 @@ class LoginApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1299,7 +1299,7 @@ class LoginApi
      *
      * Enable Totp Authentication
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\EnableTOTP $enable_totp (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\EnableTOTP $enable_totp (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1319,14 +1319,14 @@ class LoginApi
      *
      * Enable Totp Authentication
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\EnableTOTP $enable_totp (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\EnableTOTP $enable_totp (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function enableTotpAuthenticationApiV1LoginTotpPutAsyncWithHttpInfo($enable_totp)
     {
-        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Msg';
+        $returnType = '\AkeneoPresales\DescrbAPI\Model\Msg';
         $request = $this->enableTotpAuthenticationApiV1LoginTotpPutRequest($enable_totp);
 
         return $this->client
@@ -1365,7 +1365,7 @@ class LoginApi
     /**
      * Create request for operation 'enableTotpAuthenticationApiV1LoginTotpPut'
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\EnableTOTP $enable_totp (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\EnableTOTP $enable_totp (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1463,7 +1463,7 @@ class LoginApi
      * Login Via Facebook
      *
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return mixed
      */
@@ -1479,7 +1479,7 @@ class LoginApi
      * Login Via Facebook
      *
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of mixed, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1715,7 +1715,7 @@ class LoginApi
      * Login Via Google
      *
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return mixed
      */
@@ -1731,7 +1731,7 @@ class LoginApi
      * Login Via Google
      *
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of mixed, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1967,7 +1967,7 @@ class LoginApi
      * Login Via Linkedin
      *
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return mixed
      */
@@ -1983,7 +1983,7 @@ class LoginApi
      * Login Via Linkedin
      *
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of mixed, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2221,9 +2221,9 @@ class LoginApi
      * @param  string $email email (required)
      * @param  string $user_language user_language (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AkeneoPresales\DescrbAPI\Client\Model\WebToken|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Model\WebToken|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError
      */
     public function loginWithMagicLinkApiV1LoginMagicEmailGet($email, $user_language)
     {
@@ -2239,9 +2239,9 @@ class LoginApi
      * @param  string $email (required)
      * @param  string $user_language (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\WebToken|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Model\WebToken|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function loginWithMagicLinkApiV1LoginMagicEmailGetWithHttpInfo($email, $user_language)
     {
@@ -2284,32 +2284,32 @@ class LoginApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\WebToken' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\WebToken' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\WebToken', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\WebToken', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\WebToken';
+            $returnType = '\AkeneoPresales\DescrbAPI\Model\WebToken';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2327,7 +2327,7 @@ class LoginApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\WebToken',
+                        '\AkeneoPresales\DescrbAPI\Model\WebToken',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2335,7 +2335,7 @@ class LoginApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2379,7 +2379,7 @@ class LoginApi
      */
     public function loginWithMagicLinkApiV1LoginMagicEmailGetAsyncWithHttpInfo($email, $user_language)
     {
-        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\WebToken';
+        $returnType = '\AkeneoPresales\DescrbAPI\Model\WebToken';
         $request = $this->loginWithMagicLinkApiV1LoginMagicEmailGetRequest($email, $user_language);
 
         return $this->client
@@ -2538,9 +2538,9 @@ class LoginApi
      * @param  string $client_id client_id (optional)
      * @param  string $client_secret client_secret (optional)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AkeneoPresales\DescrbAPI\Client\Model\Token|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Model\Token|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError
      */
     public function loginWithOauth2ApiV1LoginOauthPost($username, $password, $grant_type = null, $scope = '', $client_id = null, $client_secret = null)
     {
@@ -2560,9 +2560,9 @@ class LoginApi
      * @param  string $client_id (optional)
      * @param  string $client_secret (optional)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\Token|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Model\Token|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function loginWithOauth2ApiV1LoginOauthPostWithHttpInfo($username, $password, $grant_type = null, $scope = '', $client_id = null, $client_secret = null)
     {
@@ -2605,32 +2605,32 @@ class LoginApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\Token' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\Token' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\Token', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\Token', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Token';
+            $returnType = '\AkeneoPresales\DescrbAPI\Model\Token';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2648,7 +2648,7 @@ class LoginApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\Token',
+                        '\AkeneoPresales\DescrbAPI\Model\Token',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2656,7 +2656,7 @@ class LoginApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2708,7 +2708,7 @@ class LoginApi
      */
     public function loginWithOauth2ApiV1LoginOauthPostAsyncWithHttpInfo($username, $password, $grant_type = null, $scope = '', $client_id = null, $client_secret = null)
     {
-        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Token';
+        $returnType = '\AkeneoPresales\DescrbAPI\Model\Token';
         $request = $this->loginWithOauth2ApiV1LoginOauthPostRequest($username, $password, $grant_type, $scope, $client_id, $client_secret);
 
         return $this->client
@@ -2873,11 +2873,11 @@ class LoginApi
      *
      * Login With Totp
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\WebToken $web_token web_token (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\WebToken $web_token web_token (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AkeneoPresales\DescrbAPI\Client\Model\Token|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Model\Token|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError
      */
     public function loginWithTotpApiV1LoginTotpPost($web_token)
     {
@@ -2890,11 +2890,11 @@ class LoginApi
      *
      * Login With Totp
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\WebToken $web_token (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\WebToken $web_token (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\Token|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Model\Token|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function loginWithTotpApiV1LoginTotpPostWithHttpInfo($web_token)
     {
@@ -2937,32 +2937,32 @@ class LoginApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\Token' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\Token' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\Token', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\Token', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Token';
+            $returnType = '\AkeneoPresales\DescrbAPI\Model\Token';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2980,7 +2980,7 @@ class LoginApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\Token',
+                        '\AkeneoPresales\DescrbAPI\Model\Token',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2988,7 +2988,7 @@ class LoginApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3003,7 +3003,7 @@ class LoginApi
      *
      * Login With Totp
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\WebToken $web_token (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\WebToken $web_token (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3023,14 +3023,14 @@ class LoginApi
      *
      * Login With Totp
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\WebToken $web_token (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\WebToken $web_token (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function loginWithTotpApiV1LoginTotpPostAsyncWithHttpInfo($web_token)
     {
-        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Token';
+        $returnType = '\AkeneoPresales\DescrbAPI\Model\Token';
         $request = $this->loginWithTotpApiV1LoginTotpPostRequest($web_token);
 
         return $this->client
@@ -3069,7 +3069,7 @@ class LoginApi
     /**
      * Create request for operation 'loginWithTotpApiV1LoginTotpPost'
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\WebToken $web_token (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\WebToken $web_token (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3168,9 +3168,9 @@ class LoginApi
      *
      * @param  string $email email (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return AnyOfWebTokenMsg|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
+     * @return AnyOfWebTokenMsg|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError
      */
     public function recoverPasswordApiV1LoginRecoverEmailPost($email)
     {
@@ -3185,9 +3185,9 @@ class LoginApi
      *
      * @param  string $email (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of AnyOfWebTokenMsg|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of AnyOfWebTokenMsg|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function recoverPasswordApiV1LoginRecoverEmailPostWithHttpInfo($email)
     {
@@ -3242,14 +3242,14 @@ class LoginApi
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3281,7 +3281,7 @@ class LoginApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3458,9 +3458,9 @@ class LoginApi
      * Refresh Token
      *
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AkeneoPresales\DescrbAPI\Client\Model\Token
+     * @return \AkeneoPresales\DescrbAPI\Model\Token
      */
     public function refreshTokenApiV1LoginRefreshPost()
     {
@@ -3474,9 +3474,9 @@ class LoginApi
      * Refresh Token
      *
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\Token, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Model\Token, HTTP status code, HTTP response headers (array of strings)
      */
     public function refreshTokenApiV1LoginRefreshPostWithHttpInfo()
     {
@@ -3519,20 +3519,20 @@ class LoginApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\Token' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\Token' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\Token', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\Token', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Token';
+            $returnType = '\AkeneoPresales\DescrbAPI\Model\Token';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3550,7 +3550,7 @@ class LoginApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\Token',
+                        '\AkeneoPresales\DescrbAPI\Model\Token',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3590,7 +3590,7 @@ class LoginApi
      */
     public function refreshTokenApiV1LoginRefreshPostAsyncWithHttpInfo()
     {
-        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Token';
+        $returnType = '\AkeneoPresales\DescrbAPI\Model\Token';
         $request = $this->refreshTokenApiV1LoginRefreshPostRequest();
 
         return $this->client
@@ -3713,11 +3713,11 @@ class LoginApi
      *
      * Register
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserCreate $user_create user_create (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\UserCreate $user_create user_create (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
+     * @return mixed|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError
      */
     public function registerApiV1LoginSignInPost($user_create)
     {
@@ -3730,11 +3730,11 @@ class LoginApi
      *
      * Register
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserCreate $user_create (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\UserCreate $user_create (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of mixed|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function registerApiV1LoginSignInPostWithHttpInfo($user_create)
     {
@@ -3789,14 +3789,14 @@ class LoginApi
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3828,7 +3828,7 @@ class LoginApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3843,7 +3843,7 @@ class LoginApi
      *
      * Register
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserCreate $user_create (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\UserCreate $user_create (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3863,7 +3863,7 @@ class LoginApi
      *
      * Register
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserCreate $user_create (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\UserCreate $user_create (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3909,7 +3909,7 @@ class LoginApi
     /**
      * Create request for operation 'registerApiV1LoginSignInPost'
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\UserCreate $user_create (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\UserCreate $user_create (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4002,11 +4002,11 @@ class LoginApi
      *
      * Reset Password
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BodyResetPasswordApiV1LoginResetPost $body_reset_password_api_v1_login_reset_post body_reset_password_api_v1_login_reset_post (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\BodyResetPasswordApiV1LoginResetPost $body_reset_password_api_v1_login_reset_post body_reset_password_api_v1_login_reset_post (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AkeneoPresales\DescrbAPI\Client\Model\Msg|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Model\Msg|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError
      */
     public function resetPasswordApiV1LoginResetPost($body_reset_password_api_v1_login_reset_post)
     {
@@ -4019,11 +4019,11 @@ class LoginApi
      *
      * Reset Password
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BodyResetPasswordApiV1LoginResetPost $body_reset_password_api_v1_login_reset_post (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\BodyResetPasswordApiV1LoginResetPost $body_reset_password_api_v1_login_reset_post (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\Msg|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Model\Msg|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function resetPasswordApiV1LoginResetPostWithHttpInfo($body_reset_password_api_v1_login_reset_post)
     {
@@ -4066,32 +4066,32 @@ class LoginApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\Msg' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\Msg' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\Msg', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\Msg', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Msg';
+            $returnType = '\AkeneoPresales\DescrbAPI\Model\Msg';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4109,7 +4109,7 @@ class LoginApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\Msg',
+                        '\AkeneoPresales\DescrbAPI\Model\Msg',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4117,7 +4117,7 @@ class LoginApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4132,7 +4132,7 @@ class LoginApi
      *
      * Reset Password
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BodyResetPasswordApiV1LoginResetPost $body_reset_password_api_v1_login_reset_post (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\BodyResetPasswordApiV1LoginResetPost $body_reset_password_api_v1_login_reset_post (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4152,14 +4152,14 @@ class LoginApi
      *
      * Reset Password
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BodyResetPasswordApiV1LoginResetPost $body_reset_password_api_v1_login_reset_post (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\BodyResetPasswordApiV1LoginResetPost $body_reset_password_api_v1_login_reset_post (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function resetPasswordApiV1LoginResetPostAsyncWithHttpInfo($body_reset_password_api_v1_login_reset_post)
     {
-        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Msg';
+        $returnType = '\AkeneoPresales\DescrbAPI\Model\Msg';
         $request = $this->resetPasswordApiV1LoginResetPostRequest($body_reset_password_api_v1_login_reset_post);
 
         return $this->client
@@ -4198,7 +4198,7 @@ class LoginApi
     /**
      * Create request for operation 'resetPasswordApiV1LoginResetPost'
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BodyResetPasswordApiV1LoginResetPost $body_reset_password_api_v1_login_reset_post (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\BodyResetPasswordApiV1LoginResetPost $body_reset_password_api_v1_login_reset_post (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4296,9 +4296,9 @@ class LoginApi
      * Revoke Token
      *
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AkeneoPresales\DescrbAPI\Client\Model\Msg
+     * @return \AkeneoPresales\DescrbAPI\Model\Msg
      */
     public function revokeTokenApiV1LoginRevokePost()
     {
@@ -4312,9 +4312,9 @@ class LoginApi
      * Revoke Token
      *
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\Msg, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Model\Msg, HTTP status code, HTTP response headers (array of strings)
      */
     public function revokeTokenApiV1LoginRevokePostWithHttpInfo()
     {
@@ -4357,20 +4357,20 @@ class LoginApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\Msg' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\Msg' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\Msg', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\Msg', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Msg';
+            $returnType = '\AkeneoPresales\DescrbAPI\Model\Msg';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4388,7 +4388,7 @@ class LoginApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\Msg',
+                        '\AkeneoPresales\DescrbAPI\Model\Msg',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4428,7 +4428,7 @@ class LoginApi
      */
     public function revokeTokenApiV1LoginRevokePostAsyncWithHttpInfo()
     {
-        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Msg';
+        $returnType = '\AkeneoPresales\DescrbAPI\Model\Msg';
         $request = $this->revokeTokenApiV1LoginRevokePostRequest();
 
         return $this->client
@@ -4551,11 +4551,11 @@ class LoginApi
      *
      * Validate Magic Link
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\WebToken $web_token web_token (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\WebToken $web_token web_token (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AkeneoPresales\DescrbAPI\Client\Model\Token|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Model\Token|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError
      */
     public function validateMagicLinkApiV1LoginClaimPost($web_token)
     {
@@ -4568,11 +4568,11 @@ class LoginApi
      *
      * Validate Magic Link
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\WebToken $web_token (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\WebToken $web_token (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\Token|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Model\Token|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function validateMagicLinkApiV1LoginClaimPostWithHttpInfo($web_token)
     {
@@ -4615,32 +4615,32 @@ class LoginApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\Token' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\Token' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\Token', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\Token', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Token';
+            $returnType = '\AkeneoPresales\DescrbAPI\Model\Token';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4658,7 +4658,7 @@ class LoginApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\Token',
+                        '\AkeneoPresales\DescrbAPI\Model\Token',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4666,7 +4666,7 @@ class LoginApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4681,7 +4681,7 @@ class LoginApi
      *
      * Validate Magic Link
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\WebToken $web_token (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\WebToken $web_token (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4701,14 +4701,14 @@ class LoginApi
      *
      * Validate Magic Link
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\WebToken $web_token (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\WebToken $web_token (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function validateMagicLinkApiV1LoginClaimPostAsyncWithHttpInfo($web_token)
     {
-        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\Token';
+        $returnType = '\AkeneoPresales\DescrbAPI\Model\Token';
         $request = $this->validateMagicLinkApiV1LoginClaimPostRequest($web_token);
 
         return $this->client
@@ -4747,7 +4747,7 @@ class LoginApi
     /**
      * Create request for operation 'validateMagicLinkApiV1LoginClaimPost'
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\WebToken $web_token (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\WebToken $web_token (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4844,11 +4844,11 @@ class LoginApi
      *
      * Verify Recaptcha Endpoint
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\RecaptchaData $recaptcha_data recaptcha_data (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\RecaptchaData $recaptcha_data recaptcha_data (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
+     * @return mixed|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError
      */
     public function verifyRecaptchaEndpointApiV1LoginVerifyRecaptchaPost($recaptcha_data)
     {
@@ -4861,11 +4861,11 @@ class LoginApi
      *
      * Verify Recaptcha Endpoint
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\RecaptchaData $recaptcha_data (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\RecaptchaData $recaptcha_data (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of mixed|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function verifyRecaptchaEndpointApiV1LoginVerifyRecaptchaPostWithHttpInfo($recaptcha_data)
     {
@@ -4920,14 +4920,14 @@ class LoginApi
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -4959,7 +4959,7 @@ class LoginApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4974,7 +4974,7 @@ class LoginApi
      *
      * Verify Recaptcha Endpoint
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\RecaptchaData $recaptcha_data (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\RecaptchaData $recaptcha_data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4994,7 +4994,7 @@ class LoginApi
      *
      * Verify Recaptcha Endpoint
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\RecaptchaData $recaptcha_data (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\RecaptchaData $recaptcha_data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5040,7 +5040,7 @@ class LoginApi
     /**
      * Create request for operation 'verifyRecaptchaEndpointApiV1LoginVerifyRecaptchaPost'
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\RecaptchaData $recaptcha_data (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\RecaptchaData $recaptcha_data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

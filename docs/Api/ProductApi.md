@@ -1,4 +1,4 @@
-# AkeneoPresales\DescrbAPI\Client\ProductApi
+# AkeneoPresales\DescrbAPI\ProductApi
 
 All URIs are relative to http://localhost.
 
@@ -46,13 +46,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $base_image = array("/path/to/file.txt"); // \SplFileObject[] | Image Files
-$segmented_image = array(new \AkeneoPresales\DescrbAPI\Client\Model\AnyOfFileString()); // AnyOfFileString[] | Segmented Image Files
+$segmented_image = array(new \AkeneoPresales\DescrbAPI\Model\AnyOfFileString()); // AnyOfFileString[] | Segmented Image Files
 $photo_url = ''; // string | Photo URL
 $name = array('name_example'); // string[] | Product Names
 $product_id = array('product_id_example'); // string[] | Product IDs
@@ -140,17 +140,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $base_image = array("/path/to/file.txt"); // \SplFileObject[] | Image Files
-$segmented_image = array(new \AkeneoPresales\DescrbAPI\Client\Model\AnyOfFileString()); // AnyOfFileString[] | Segmented Image Files
+$segmented_image = array(new \AkeneoPresales\DescrbAPI\Model\AnyOfFileString()); // AnyOfFileString[] | Segmented Image Files
 $photo_url = ''; // string | Photo URL
 $name = array('name_example'); // string[] | Product Names
 $product_id = array('product_id_example'); // string[] | Product IDs
@@ -223,7 +223,7 @@ Name | Type | Description  | Notes
 ## `editBrandDescriptionApiV1ProductBrandDescriptionIdPatch()`
 
 ```php
-editBrandDescriptionApiV1ProductBrandDescriptionIdPatch($description_id, $brand_description_update): \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate
+editBrandDescriptionApiV1ProductBrandDescriptionIdPatch($description_id, $brand_description_update): \AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate
 ```
 
 Edit Brand Description
@@ -238,17 +238,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $description_id = 'description_id_example'; // string
-$brand_description_update = new \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate(); // \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate
+$brand_description_update = new \AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate(); // \AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate
 
 try {
     $result = $apiInstance->editBrandDescriptionApiV1ProductBrandDescriptionIdPatch($description_id, $brand_description_update);
@@ -263,11 +263,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **description_id** | **string**|  |
- **brand_description_update** | [**\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate**](../Model/BrandDescriptionUpdate.md)|  |
+ **brand_description_update** | [**\AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate**](../Model/BrandDescriptionUpdate.md)|  |
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate**](../Model/BrandDescriptionUpdate.md)
+[**\AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate**](../Model/BrandDescriptionUpdate.md)
 
 ### Authorization
 
@@ -285,7 +285,7 @@ Name | Type | Description  | Notes
 ## `editDescriptionApiV1ProductDescriptionDescriptionIdPatch()`
 
 ```php
-editDescriptionApiV1ProductDescriptionDescriptionIdPatch($description_id, $product_description_update): \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate
+editDescriptionApiV1ProductDescriptionDescriptionIdPatch($description_id, $product_description_update): \AkeneoPresales\DescrbAPI\Model\ProductDescriptionUpdate
 ```
 
 Edit Description
@@ -300,17 +300,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $description_id = 'description_id_example'; // string
-$product_description_update = new \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate(); // \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate
+$product_description_update = new \AkeneoPresales\DescrbAPI\Model\ProductDescriptionUpdate(); // \AkeneoPresales\DescrbAPI\Model\ProductDescriptionUpdate
 
 try {
     $result = $apiInstance->editDescriptionApiV1ProductDescriptionDescriptionIdPatch($description_id, $product_description_update);
@@ -325,11 +325,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **description_id** | **string**|  |
- **product_description_update** | [**\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate**](../Model/ProductDescriptionUpdate.md)|  |
+ **product_description_update** | [**\AkeneoPresales\DescrbAPI\Model\ProductDescriptionUpdate**](../Model/ProductDescriptionUpdate.md)|  |
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate**](../Model/ProductDescriptionUpdate.md)
+[**\AkeneoPresales\DescrbAPI\Model\ProductDescriptionUpdate**](../Model/ProductDescriptionUpdate.md)
 
 ### Authorization
 
@@ -347,7 +347,7 @@ Name | Type | Description  | Notes
 ## `editHistoryDescriptionApiV1ProductHistoryDescriptionIdPatch()`
 
 ```php
-editHistoryDescriptionApiV1ProductHistoryDescriptionIdPatch($description_id, $product_history_update): \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate
+editHistoryDescriptionApiV1ProductHistoryDescriptionIdPatch($description_id, $product_history_update): \AkeneoPresales\DescrbAPI\Model\ProductHistoryUpdate
 ```
 
 Edit History Description
@@ -362,17 +362,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $description_id = 'description_id_example'; // string
-$product_history_update = new \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate(); // \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate
+$product_history_update = new \AkeneoPresales\DescrbAPI\Model\ProductHistoryUpdate(); // \AkeneoPresales\DescrbAPI\Model\ProductHistoryUpdate
 
 try {
     $result = $apiInstance->editHistoryDescriptionApiV1ProductHistoryDescriptionIdPatch($description_id, $product_history_update);
@@ -387,11 +387,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **description_id** | **string**|  |
- **product_history_update** | [**\AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate**](../Model/ProductHistoryUpdate.md)|  |
+ **product_history_update** | [**\AkeneoPresales\DescrbAPI\Model\ProductHistoryUpdate**](../Model/ProductHistoryUpdate.md)|  |
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate**](../Model/ProductHistoryUpdate.md)
+[**\AkeneoPresales\DescrbAPI\Model\ProductHistoryUpdate**](../Model/ProductHistoryUpdate.md)
 
 ### Authorization
 
@@ -422,10 +422,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -480,10 +480,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -542,10 +542,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -602,10 +602,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -664,10 +664,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -711,7 +711,7 @@ Name | Type | Description  | Notes
 ## `getDescriptionApiV1ProductDescriptionIdGet()`
 
 ```php
-getDescriptionApiV1ProductDescriptionIdGet($description_id): \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionExtended
+getDescriptionApiV1ProductDescriptionIdGet($description_id): \AkeneoPresales\DescrbAPI\Model\ProductDescriptionExtended
 ```
 
 Get Description
@@ -726,10 +726,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -753,7 +753,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionExtended**](../Model/ProductDescriptionExtended.md)
+[**\AkeneoPresales\DescrbAPI\Model\ProductDescriptionExtended**](../Model/ProductDescriptionExtended.md)
 
 ### Authorization
 
@@ -771,7 +771,7 @@ Name | Type | Description  | Notes
 ## `readAllProductDescriptionsApiV1ProductAllGet()`
 
 ```php
-readAllProductDescriptionsApiV1ProductAllGet($score, $name__ilike, $brand_name__ilike, $order_by, $limit, $offset): \AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionInDB
+readAllProductDescriptionsApiV1ProductAllGet($score, $name__ilike, $brand_name__ilike, $order_by, $limit, $offset): \AkeneoPresales\DescrbAPI\Model\LimitOffsetPageProductDescriptionInDB
 ```
 
 Read All Product Descriptions
@@ -786,10 +786,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -823,7 +823,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionInDB**](../Model/LimitOffsetPageProductDescriptionInDB.md)
+[**\AkeneoPresales\DescrbAPI\Model\LimitOffsetPageProductDescriptionInDB**](../Model/LimitOffsetPageProductDescriptionInDB.md)
 
 ### Authorization
 
@@ -841,7 +841,7 @@ Name | Type | Description  | Notes
 ## `readUserProductDescriptionsApiV1ProductMyReviewsGet()`
 
 ```php
-readUserProductDescriptionsApiV1ProductMyReviewsGet($score, $name__ilike, $brand_name__ilike, $order_by, $limit, $offset): \AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionInDB
+readUserProductDescriptionsApiV1ProductMyReviewsGet($score, $name__ilike, $brand_name__ilike, $order_by, $limit, $offset): \AkeneoPresales\DescrbAPI\Model\LimitOffsetPageProductDescriptionInDB
 ```
 
 Read User Product Descriptions
@@ -856,10 +856,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -893,7 +893,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\LimitOffsetPageProductDescriptionInDB**](../Model/LimitOffsetPageProductDescriptionInDB.md)
+[**\AkeneoPresales\DescrbAPI\Model\LimitOffsetPageProductDescriptionInDB**](../Model/LimitOffsetPageProductDescriptionInDB.md)
 
 ### Authorization
 
@@ -911,7 +911,7 @@ Name | Type | Description  | Notes
 ## `regenerateBrandDescriptionApiV1ProductRegenerateBrandDescriptionDescriptionIdPost()`
 
 ```php
-regenerateBrandDescriptionApiV1ProductRegenerateBrandDescriptionDescriptionIdPost($description_id): \AkeneoPresales\DescrbAPI\Client\Model\BrandDescription
+regenerateBrandDescriptionApiV1ProductRegenerateBrandDescriptionDescriptionIdPost($description_id): \AkeneoPresales\DescrbAPI\Model\BrandDescription
 ```
 
 Regenerate Brand Description
@@ -924,10 +924,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -951,7 +951,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\BrandDescription**](../Model/BrandDescription.md)
+[**\AkeneoPresales\DescrbAPI\Model\BrandDescription**](../Model/BrandDescription.md)
 
 ### Authorization
 
@@ -969,7 +969,7 @@ Name | Type | Description  | Notes
 ## `regenerateDescriptionApiV1ProductRegenerateDescriptionDescriptionIdPost()`
 
 ```php
-regenerateDescriptionApiV1ProductRegenerateDescriptionDescriptionIdPost($description_id): \AkeneoPresales\DescrbAPI\Client\Model\ProductDescription
+regenerateDescriptionApiV1ProductRegenerateDescriptionDescriptionIdPost($description_id): \AkeneoPresales\DescrbAPI\Model\ProductDescription
 ```
 
 Regenerate Description
@@ -982,10 +982,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1009,7 +1009,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\ProductDescription**](../Model/ProductDescription.md)
+[**\AkeneoPresales\DescrbAPI\Model\ProductDescription**](../Model/ProductDescription.md)
 
 ### Authorization
 
@@ -1040,10 +1040,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1085,7 +1085,7 @@ Name | Type | Description  | Notes
 ## `regenerateHistoryDescriptionApiV1ProductRegenerateHistoryDescriptionDescriptionIdPost()`
 
 ```php
-regenerateHistoryDescriptionApiV1ProductRegenerateHistoryDescriptionDescriptionIdPost($description_id): \AkeneoPresales\DescrbAPI\Client\Model\ProductHistory
+regenerateHistoryDescriptionApiV1ProductRegenerateHistoryDescriptionDescriptionIdPost($description_id): \AkeneoPresales\DescrbAPI\Model\ProductHistory
 ```
 
 Regenerate History Description
@@ -1098,10 +1098,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1125,7 +1125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\ProductHistory**](../Model/ProductHistory.md)
+[**\AkeneoPresales\DescrbAPI\Model\ProductHistory**](../Model/ProductHistory.md)
 
 ### Authorization
 
@@ -1143,7 +1143,7 @@ Name | Type | Description  | Notes
 ## `regenerateTechnologyApiV1ProductRegenerateTechnologiesDescriptionDescriptionIdPost()`
 
 ```php
-regenerateTechnologyApiV1ProductRegenerateTechnologiesDescriptionDescriptionIdPost($description_id): \AkeneoPresales\DescrbAPI\Client\Model\Technologies
+regenerateTechnologyApiV1ProductRegenerateTechnologiesDescriptionDescriptionIdPost($description_id): \AkeneoPresales\DescrbAPI\Model\Technologies
 ```
 
 Regenerate Technology
@@ -1156,10 +1156,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1183,7 +1183,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\Technologies**](../Model/Technologies.md)
+[**\AkeneoPresales\DescrbAPI\Model\Technologies**](../Model/Technologies.md)
 
 ### Authorization
 
@@ -1201,7 +1201,7 @@ Name | Type | Description  | Notes
 ## `reviewBrandDescriptionApiV1ProductBrandDescriptionIdReviewPost()`
 
 ```php
-reviewBrandDescriptionApiV1ProductBrandDescriptionIdReviewPost($description_id, $brand_description_update): \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate
+reviewBrandDescriptionApiV1ProductBrandDescriptionIdReviewPost($description_id, $brand_description_update): \AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate
 ```
 
 Review Brand Description
@@ -1216,17 +1216,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $description_id = 'description_id_example'; // string
-$brand_description_update = new \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate(); // \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate
+$brand_description_update = new \AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate(); // \AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate
 
 try {
     $result = $apiInstance->reviewBrandDescriptionApiV1ProductBrandDescriptionIdReviewPost($description_id, $brand_description_update);
@@ -1241,11 +1241,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **description_id** | **string**|  |
- **brand_description_update** | [**\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate**](../Model/BrandDescriptionUpdate.md)|  |
+ **brand_description_update** | [**\AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate**](../Model/BrandDescriptionUpdate.md)|  |
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionUpdate**](../Model/BrandDescriptionUpdate.md)
+[**\AkeneoPresales\DescrbAPI\Model\BrandDescriptionUpdate**](../Model/BrandDescriptionUpdate.md)
 
 ### Authorization
 
@@ -1263,7 +1263,7 @@ Name | Type | Description  | Notes
 ## `reviewDescriptionApiV1ProductDescriptionDescriptionIdReviewPost()`
 
 ```php
-reviewDescriptionApiV1ProductDescriptionDescriptionIdReviewPost($description_id, $product_description_update): \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate
+reviewDescriptionApiV1ProductDescriptionDescriptionIdReviewPost($description_id, $product_description_update): \AkeneoPresales\DescrbAPI\Model\ProductDescriptionUpdate
 ```
 
 Review Description
@@ -1278,17 +1278,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $description_id = 'description_id_example'; // string
-$product_description_update = new \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate(); // \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate
+$product_description_update = new \AkeneoPresales\DescrbAPI\Model\ProductDescriptionUpdate(); // \AkeneoPresales\DescrbAPI\Model\ProductDescriptionUpdate
 
 try {
     $result = $apiInstance->reviewDescriptionApiV1ProductDescriptionDescriptionIdReviewPost($description_id, $product_description_update);
@@ -1303,11 +1303,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **description_id** | **string**|  |
- **product_description_update** | [**\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate**](../Model/ProductDescriptionUpdate.md)|  |
+ **product_description_update** | [**\AkeneoPresales\DescrbAPI\Model\ProductDescriptionUpdate**](../Model/ProductDescriptionUpdate.md)|  |
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionUpdate**](../Model/ProductDescriptionUpdate.md)
+[**\AkeneoPresales\DescrbAPI\Model\ProductDescriptionUpdate**](../Model/ProductDescriptionUpdate.md)
 
 ### Authorization
 
@@ -1325,7 +1325,7 @@ Name | Type | Description  | Notes
 ## `reviewHistoryDescriptionApiV1ProductHistoryDescriptionIdReviewPost()`
 
 ```php
-reviewHistoryDescriptionApiV1ProductHistoryDescriptionIdReviewPost($description_id, $product_history_update): \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate
+reviewHistoryDescriptionApiV1ProductHistoryDescriptionIdReviewPost($description_id, $product_history_update): \AkeneoPresales\DescrbAPI\Model\ProductHistoryUpdate
 ```
 
 Review History Description
@@ -1340,17 +1340,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $description_id = 'description_id_example'; // string
-$product_history_update = new \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate(); // \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate
+$product_history_update = new \AkeneoPresales\DescrbAPI\Model\ProductHistoryUpdate(); // \AkeneoPresales\DescrbAPI\Model\ProductHistoryUpdate
 
 try {
     $result = $apiInstance->reviewHistoryDescriptionApiV1ProductHistoryDescriptionIdReviewPost($description_id, $product_history_update);
@@ -1365,11 +1365,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **description_id** | **string**|  |
- **product_history_update** | [**\AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate**](../Model/ProductHistoryUpdate.md)|  |
+ **product_history_update** | [**\AkeneoPresales\DescrbAPI\Model\ProductHistoryUpdate**](../Model/ProductHistoryUpdate.md)|  |
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryUpdate**](../Model/ProductHistoryUpdate.md)
+[**\AkeneoPresales\DescrbAPI\Model\ProductHistoryUpdate**](../Model/ProductHistoryUpdate.md)
 
 ### Authorization
 
@@ -1400,10 +1400,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\ProductApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

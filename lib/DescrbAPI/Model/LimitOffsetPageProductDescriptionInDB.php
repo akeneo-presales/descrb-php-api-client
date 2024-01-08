@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace AkeneoPresales\DescrbAPI\Client\Model;
+namespace AkeneoPresales\DescrbAPI\Model;
 
 use \ArrayAccess;
-use \AkeneoPresales\DescrbAPI\Client\ObjectSerializer;
+use \AkeneoPresales\DescrbAPI\ObjectSerializer;
 
 /**
  * LimitOffsetPageProductDescriptionInDB Class Doc Comment
@@ -59,7 +59,7 @@ class LimitOffsetPageProductDescriptionInDB implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionInDB[]',
+        'items' => '\AkeneoPresales\DescrbAPI\Model\ProductDescriptionInDB[]',
         'total' => 'int',
         'limit' => 'int',
         'offset' => 'int'
@@ -244,7 +244,7 @@ class LimitOffsetPageProductDescriptionInDB implements ModelInterface, ArrayAcce
     /**
      * Gets items
      *
-     * @return \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionInDB[]
+     * @return \AkeneoPresales\DescrbAPI\Model\ProductDescriptionInDB[]
      */
     public function getItems()
     {
@@ -254,7 +254,7 @@ class LimitOffsetPageProductDescriptionInDB implements ModelInterface, ArrayAcce
     /**
      * Sets items
      *
-     * @param \AkeneoPresales\DescrbAPI\Client\Model\ProductDescriptionInDB[] $items items
+     * @param \AkeneoPresales\DescrbAPI\Model\ProductDescriptionInDB[] $items items
      *
      * @return self
      */

@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace AkeneoPresales\DescrbAPI\Client\Model;
+namespace AkeneoPresales\DescrbAPI\Model;
 
 use \ArrayAccess;
-use \AkeneoPresales\DescrbAPI\Client\ObjectSerializer;
+use \AkeneoPresales\DescrbAPI\ObjectSerializer;
 
 /**
  * ProductDescriptionExtended Class Doc Comment
@@ -94,9 +94,9 @@ class ProductDescriptionExtended implements ModelInterface, ArrayAccess, \JsonSe
         'product_history_description_bool' => 'bool',
         'technologies_bool' => 'bool',
         'seen_bool' => 'bool',
-        'brand_description' => '\AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionInDB[]',
-        'product_history_description' => '\AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryInDB[]',
-        'technologies' => '\AkeneoPresales\DescrbAPI\Client\Model\TechnologiesInDB'
+        'brand_description' => '\AkeneoPresales\DescrbAPI\Model\BrandDescriptionInDB[]',
+        'product_history_description' => '\AkeneoPresales\DescrbAPI\Model\ProductHistoryInDB[]',
+        'technologies' => '\AkeneoPresales\DescrbAPI\Model\TechnologiesInDB'
     ];
 
     /**
@@ -1317,7 +1317,7 @@ class ProductDescriptionExtended implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets brand_description
      *
-     * @return \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionInDB[]|null
+     * @return \AkeneoPresales\DescrbAPI\Model\BrandDescriptionInDB[]|null
      */
     public function getBrandDescription()
     {
@@ -1327,7 +1327,7 @@ class ProductDescriptionExtended implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets brand_description
      *
-     * @param \AkeneoPresales\DescrbAPI\Client\Model\BrandDescriptionInDB[]|null $brand_description brand_description
+     * @param \AkeneoPresales\DescrbAPI\Model\BrandDescriptionInDB[]|null $brand_description brand_description
      *
      * @return self
      */
@@ -1341,7 +1341,7 @@ class ProductDescriptionExtended implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets product_history_description
      *
-     * @return \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryInDB[]|null
+     * @return \AkeneoPresales\DescrbAPI\Model\ProductHistoryInDB[]|null
      */
     public function getProductHistoryDescription()
     {
@@ -1351,7 +1351,7 @@ class ProductDescriptionExtended implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets product_history_description
      *
-     * @param \AkeneoPresales\DescrbAPI\Client\Model\ProductHistoryInDB[]|null $product_history_description product_history_description
+     * @param \AkeneoPresales\DescrbAPI\Model\ProductHistoryInDB[]|null $product_history_description product_history_description
      *
      * @return self
      */
@@ -1365,7 +1365,7 @@ class ProductDescriptionExtended implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets technologies
      *
-     * @return \AkeneoPresales\DescrbAPI\Client\Model\TechnologiesInDB|null
+     * @return \AkeneoPresales\DescrbAPI\Model\TechnologiesInDB|null
      */
     public function getTechnologies()
     {
@@ -1375,7 +1375,7 @@ class ProductDescriptionExtended implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets technologies
      *
-     * @param \AkeneoPresales\DescrbAPI\Client\Model\TechnologiesInDB|null $technologies technologies
+     * @param \AkeneoPresales\DescrbAPI\Model\TechnologiesInDB|null $technologies technologies
      *
      * @return self
      */

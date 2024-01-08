@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace AkeneoPresales\DescrbAPI\Client\Api;
+namespace AkeneoPresales\DescrbAPI\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,10 +34,10 @@ use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AkeneoPresales\DescrbAPI\Client\ApiException;
-use AkeneoPresales\DescrbAPI\Client\Configuration;
-use AkeneoPresales\DescrbAPI\Client\HeaderSelector;
-use AkeneoPresales\DescrbAPI\Client\ObjectSerializer;
+use AkeneoPresales\DescrbAPI\ApiException;
+use AkeneoPresales\DescrbAPI\Configuration;
+use AkeneoPresales\DescrbAPI\HeaderSelector;
+use AkeneoPresales\DescrbAPI\ObjectSerializer;
 
 /**
  * BrandTemplateApi Class Doc Comment
@@ -120,11 +120,11 @@ class BrandTemplateApi
      *
      * Create Template
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandTemplateCreate $brand_template_create brand_template_create (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\BrandTemplateCreate $brand_template_create brand_template_create (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
+     * @return mixed|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError
      */
     public function createTemplateApiV1BrandTemplatePost($brand_template_create)
     {
@@ -137,11 +137,11 @@ class BrandTemplateApi
      *
      * Create Template
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandTemplateCreate $brand_template_create (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\BrandTemplateCreate $brand_template_create (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of mixed|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function createTemplateApiV1BrandTemplatePostWithHttpInfo($brand_template_create)
     {
@@ -196,14 +196,14 @@ class BrandTemplateApi
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -235,7 +235,7 @@ class BrandTemplateApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -250,7 +250,7 @@ class BrandTemplateApi
      *
      * Create Template
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandTemplateCreate $brand_template_create (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\BrandTemplateCreate $brand_template_create (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -270,7 +270,7 @@ class BrandTemplateApi
      *
      * Create Template
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandTemplateCreate $brand_template_create (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\BrandTemplateCreate $brand_template_create (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -316,7 +316,7 @@ class BrandTemplateApi
     /**
      * Create request for operation 'createTemplateApiV1BrandTemplatePost'
      *
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandTemplateCreate $brand_template_create (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\BrandTemplateCreate $brand_template_create (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -415,9 +415,9 @@ class BrandTemplateApi
      *
      * @param  string $template_id template_id (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
+     * @return mixed|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError
      */
     public function deleteTemplateApiV1BrandTemplateTemplateTemplateIdDelete($template_id)
     {
@@ -432,9 +432,9 @@ class BrandTemplateApi
      *
      * @param  string $template_id (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of mixed|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of mixed|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteTemplateApiV1BrandTemplateTemplateTemplateIdDeleteWithHttpInfo($template_id)
     {
@@ -489,14 +489,14 @@ class BrandTemplateApi
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -528,7 +528,7 @@ class BrandTemplateApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -709,11 +709,11 @@ class BrandTemplateApi
      * Edit Template
      *
      * @param  string $template_id template_id (required)
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandTemplateUpdate $brand_template_update brand_template_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\BrandTemplateUpdate $brand_template_update brand_template_update (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AkeneoPresales\DescrbAPI\Client\Model\BrandTemplate|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError
+     * @return \AkeneoPresales\DescrbAPI\Model\BrandTemplate|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError
      */
     public function editTemplateApiV1BrandTemplateTemplateTemplateIdPatch($template_id, $brand_template_update)
     {
@@ -727,11 +727,11 @@ class BrandTemplateApi
      * Edit Template
      *
      * @param  string $template_id (required)
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandTemplateUpdate $brand_template_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\BrandTemplateUpdate $brand_template_update (required)
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AkeneoPresales\DescrbAPI\Client\Model\BrandTemplate|\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \AkeneoPresales\DescrbAPI\Model\BrandTemplate|\AkeneoPresales\DescrbAPI\Model\HTTPValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function editTemplateApiV1BrandTemplateTemplateTemplateIdPatchWithHttpInfo($template_id, $brand_template_update)
     {
@@ -774,32 +774,32 @@ class BrandTemplateApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\BrandTemplate' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\BrandTemplate' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\BrandTemplate', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\BrandTemplate', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError' === '\SplFileObject') {
+                    if ('\AkeneoPresales\DescrbAPI\Model\HTTPValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError', []),
+                        ObjectSerializer::deserialize($content, '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\BrandTemplate';
+            $returnType = '\AkeneoPresales\DescrbAPI\Model\BrandTemplate';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -817,7 +817,7 @@ class BrandTemplateApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\BrandTemplate',
+                        '\AkeneoPresales\DescrbAPI\Model\BrandTemplate',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -825,7 +825,7 @@ class BrandTemplateApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AkeneoPresales\DescrbAPI\Client\Model\HTTPValidationError',
+                        '\AkeneoPresales\DescrbAPI\Model\HTTPValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -841,7 +841,7 @@ class BrandTemplateApi
      * Edit Template
      *
      * @param  string $template_id (required)
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandTemplateUpdate $brand_template_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\BrandTemplateUpdate $brand_template_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -862,14 +862,14 @@ class BrandTemplateApi
      * Edit Template
      *
      * @param  string $template_id (required)
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandTemplateUpdate $brand_template_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\BrandTemplateUpdate $brand_template_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function editTemplateApiV1BrandTemplateTemplateTemplateIdPatchAsyncWithHttpInfo($template_id, $brand_template_update)
     {
-        $returnType = '\AkeneoPresales\DescrbAPI\Client\Model\BrandTemplate';
+        $returnType = '\AkeneoPresales\DescrbAPI\Model\BrandTemplate';
         $request = $this->editTemplateApiV1BrandTemplateTemplateTemplateIdPatchRequest($template_id, $brand_template_update);
 
         return $this->client
@@ -909,7 +909,7 @@ class BrandTemplateApi
      * Create request for operation 'editTemplateApiV1BrandTemplateTemplateTemplateIdPatch'
      *
      * @param  string $template_id (required)
-     * @param  \AkeneoPresales\DescrbAPI\Client\Model\BrandTemplateUpdate $brand_template_update (required)
+     * @param  \AkeneoPresales\DescrbAPI\Model\BrandTemplateUpdate $brand_template_update (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1021,7 +1021,7 @@ class BrandTemplateApi
      * Read User Templates
      *
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return mixed
      */
@@ -1037,7 +1037,7 @@ class BrandTemplateApi
      * Read User Templates
      *
      *
-     * @throws \AkeneoPresales\DescrbAPI\Client\ApiException on non-2xx response
+     * @throws \AkeneoPresales\DescrbAPI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of mixed, HTTP status code, HTTP response headers (array of strings)
      */

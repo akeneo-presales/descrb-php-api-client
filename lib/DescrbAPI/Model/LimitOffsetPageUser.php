@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace AkeneoPresales\DescrbAPI\Client\Model;
+namespace AkeneoPresales\DescrbAPI\Model;
 
 use \ArrayAccess;
-use \AkeneoPresales\DescrbAPI\Client\ObjectSerializer;
+use \AkeneoPresales\DescrbAPI\ObjectSerializer;
 
 /**
  * LimitOffsetPageUser Class Doc Comment
@@ -59,7 +59,7 @@ class LimitOffsetPageUser implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\AkeneoPresales\DescrbAPI\Client\Model\User[]',
+        'items' => '\AkeneoPresales\DescrbAPI\Model\User[]',
         'total' => 'int',
         'limit' => 'int',
         'offset' => 'int'
@@ -244,7 +244,7 @@ class LimitOffsetPageUser implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets items
      *
-     * @return \AkeneoPresales\DescrbAPI\Client\Model\User[]
+     * @return \AkeneoPresales\DescrbAPI\Model\User[]
      */
     public function getItems()
     {
@@ -254,7 +254,7 @@ class LimitOffsetPageUser implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets items
      *
-     * @param \AkeneoPresales\DescrbAPI\Client\Model\User[] $items items
+     * @param \AkeneoPresales\DescrbAPI\Model\User[] $items items
      *
      * @return self
      */

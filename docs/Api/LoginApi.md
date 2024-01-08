@@ -1,4 +1,4 @@
-# AkeneoPresales\DescrbAPI\Client\LoginApi
+# AkeneoPresales\DescrbAPI\LoginApi
 
 All URIs are relative to http://localhost.
 
@@ -40,7 +40,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\LoginApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\LoginApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -91,7 +91,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\LoginApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\LoginApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -142,7 +142,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\LoginApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\LoginApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -180,7 +180,7 @@ No authorization required
 ## `disableTotpAuthenticationApiV1LoginTotpDelete()`
 
 ```php
-disableTotpAuthenticationApiV1LoginTotpDelete($user_update): \AkeneoPresales\DescrbAPI\Client\Model\Msg
+disableTotpAuthenticationApiV1LoginTotpDelete($user_update): \AkeneoPresales\DescrbAPI\Model\Msg
 ```
 
 Disable Totp Authentication
@@ -195,16 +195,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\LoginApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\LoginApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$user_update = new \AkeneoPresales\DescrbAPI\Client\Model\UserUpdate(); // \AkeneoPresales\DescrbAPI\Client\Model\UserUpdate
+$user_update = new \AkeneoPresales\DescrbAPI\Model\UserUpdate(); // \AkeneoPresales\DescrbAPI\Model\UserUpdate
 
 try {
     $result = $apiInstance->disableTotpAuthenticationApiV1LoginTotpDelete($user_update);
@@ -218,11 +218,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **user_update** | [**\AkeneoPresales\DescrbAPI\Client\Model\UserUpdate**](../Model/UserUpdate.md)|  |
+ **user_update** | [**\AkeneoPresales\DescrbAPI\Model\UserUpdate**](../Model/UserUpdate.md)|  |
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\Msg**](../Model/Msg.md)
+[**\AkeneoPresales\DescrbAPI\Model\Msg**](../Model/Msg.md)
 
 ### Authorization
 
@@ -240,7 +240,7 @@ Name | Type | Description  | Notes
 ## `enableTotpAuthenticationApiV1LoginTotpPut()`
 
 ```php
-enableTotpAuthenticationApiV1LoginTotpPut($enable_totp): \AkeneoPresales\DescrbAPI\Client\Model\Msg
+enableTotpAuthenticationApiV1LoginTotpPut($enable_totp): \AkeneoPresales\DescrbAPI\Model\Msg
 ```
 
 Enable Totp Authentication
@@ -255,16 +255,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\LoginApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\LoginApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$enable_totp = new \AkeneoPresales\DescrbAPI\Client\Model\EnableTOTP(); // \AkeneoPresales\DescrbAPI\Client\Model\EnableTOTP
+$enable_totp = new \AkeneoPresales\DescrbAPI\Model\EnableTOTP(); // \AkeneoPresales\DescrbAPI\Model\EnableTOTP
 
 try {
     $result = $apiInstance->enableTotpAuthenticationApiV1LoginTotpPut($enable_totp);
@@ -278,11 +278,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **enable_totp** | [**\AkeneoPresales\DescrbAPI\Client\Model\EnableTOTP**](../Model/EnableTOTP.md)|  |
+ **enable_totp** | [**\AkeneoPresales\DescrbAPI\Model\EnableTOTP**](../Model/EnableTOTP.md)|  |
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\Msg**](../Model/Msg.md)
+[**\AkeneoPresales\DescrbAPI\Model\Msg**](../Model/Msg.md)
 
 ### Authorization
 
@@ -313,7 +313,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\LoginApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\LoginApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -364,7 +364,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\LoginApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\LoginApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -415,7 +415,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\LoginApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\LoginApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -453,7 +453,7 @@ No authorization required
 ## `loginWithMagicLinkApiV1LoginMagicEmailGet()`
 
 ```php
-loginWithMagicLinkApiV1LoginMagicEmailGet($email, $user_language): \AkeneoPresales\DescrbAPI\Client\Model\WebToken
+loginWithMagicLinkApiV1LoginMagicEmailGet($email, $user_language): \AkeneoPresales\DescrbAPI\Model\WebToken
 ```
 
 Login With Magic Link
@@ -468,7 +468,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\LoginApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\LoginApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -493,7 +493,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\WebToken**](../Model/WebToken.md)
+[**\AkeneoPresales\DescrbAPI\Model\WebToken**](../Model/WebToken.md)
 
 ### Authorization
 
@@ -511,7 +511,7 @@ No authorization required
 ## `loginWithOauth2ApiV1LoginOauthPost()`
 
 ```php
-loginWithOauth2ApiV1LoginOauthPost($username, $password, $grant_type, $scope, $client_id, $client_secret): \AkeneoPresales\DescrbAPI\Client\Model\Token
+loginWithOauth2ApiV1LoginOauthPost($username, $password, $grant_type, $scope, $client_id, $client_secret): \AkeneoPresales\DescrbAPI\Model\Token
 ```
 
 Login With Oauth2
@@ -526,7 +526,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\LoginApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\LoginApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -559,7 +559,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\Token**](../Model/Token.md)
+[**\AkeneoPresales\DescrbAPI\Model\Token**](../Model/Token.md)
 
 ### Authorization
 
@@ -577,7 +577,7 @@ No authorization required
 ## `loginWithTotpApiV1LoginTotpPost()`
 
 ```php
-loginWithTotpApiV1LoginTotpPost($web_token): \AkeneoPresales\DescrbAPI\Client\Model\Token
+loginWithTotpApiV1LoginTotpPost($web_token): \AkeneoPresales\DescrbAPI\Model\Token
 ```
 
 Login With Totp
@@ -592,16 +592,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\LoginApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\LoginApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$web_token = new \AkeneoPresales\DescrbAPI\Client\Model\WebToken(); // \AkeneoPresales\DescrbAPI\Client\Model\WebToken
+$web_token = new \AkeneoPresales\DescrbAPI\Model\WebToken(); // \AkeneoPresales\DescrbAPI\Model\WebToken
 
 try {
     $result = $apiInstance->loginWithTotpApiV1LoginTotpPost($web_token);
@@ -615,11 +615,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **web_token** | [**\AkeneoPresales\DescrbAPI\Client\Model\WebToken**](../Model/WebToken.md)|  |
+ **web_token** | [**\AkeneoPresales\DescrbAPI\Model\WebToken**](../Model/WebToken.md)|  |
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\Token**](../Model/Token.md)
+[**\AkeneoPresales\DescrbAPI\Model\Token**](../Model/Token.md)
 
 ### Authorization
 
@@ -652,7 +652,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\LoginApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\LoginApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -693,7 +693,7 @@ No authorization required
 ## `refreshTokenApiV1LoginRefreshPost()`
 
 ```php
-refreshTokenApiV1LoginRefreshPost(): \AkeneoPresales\DescrbAPI\Client\Model\Token
+refreshTokenApiV1LoginRefreshPost(): \AkeneoPresales\DescrbAPI\Model\Token
 ```
 
 Refresh Token
@@ -708,10 +708,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\LoginApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\LoginApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -732,7 +732,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\Token**](../Model/Token.md)
+[**\AkeneoPresales\DescrbAPI\Model\Token**](../Model/Token.md)
 
 ### Authorization
 
@@ -763,12 +763,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\LoginApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\LoginApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$user_create = new \AkeneoPresales\DescrbAPI\Client\Model\UserCreate(); // \AkeneoPresales\DescrbAPI\Client\Model\UserCreate
+$user_create = new \AkeneoPresales\DescrbAPI\Model\UserCreate(); // \AkeneoPresales\DescrbAPI\Model\UserCreate
 
 try {
     $result = $apiInstance->registerApiV1LoginSignInPost($user_create);
@@ -782,7 +782,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **user_create** | [**\AkeneoPresales\DescrbAPI\Client\Model\UserCreate**](../Model/UserCreate.md)|  |
+ **user_create** | [**\AkeneoPresales\DescrbAPI\Model\UserCreate**](../Model/UserCreate.md)|  |
 
 ### Return type
 
@@ -804,7 +804,7 @@ No authorization required
 ## `resetPasswordApiV1LoginResetPost()`
 
 ```php
-resetPasswordApiV1LoginResetPost($body_reset_password_api_v1_login_reset_post): \AkeneoPresales\DescrbAPI\Client\Model\Msg
+resetPasswordApiV1LoginResetPost($body_reset_password_api_v1_login_reset_post): \AkeneoPresales\DescrbAPI\Model\Msg
 ```
 
 Reset Password
@@ -819,16 +819,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\LoginApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\LoginApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body_reset_password_api_v1_login_reset_post = new \AkeneoPresales\DescrbAPI\Client\Model\BodyResetPasswordApiV1LoginResetPost(); // \AkeneoPresales\DescrbAPI\Client\Model\BodyResetPasswordApiV1LoginResetPost
+$body_reset_password_api_v1_login_reset_post = new \AkeneoPresales\DescrbAPI\Model\BodyResetPasswordApiV1LoginResetPost(); // \AkeneoPresales\DescrbAPI\Model\BodyResetPasswordApiV1LoginResetPost
 
 try {
     $result = $apiInstance->resetPasswordApiV1LoginResetPost($body_reset_password_api_v1_login_reset_post);
@@ -842,11 +842,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body_reset_password_api_v1_login_reset_post** | [**\AkeneoPresales\DescrbAPI\Client\Model\BodyResetPasswordApiV1LoginResetPost**](../Model/BodyResetPasswordApiV1LoginResetPost.md)|  |
+ **body_reset_password_api_v1_login_reset_post** | [**\AkeneoPresales\DescrbAPI\Model\BodyResetPasswordApiV1LoginResetPost**](../Model/BodyResetPasswordApiV1LoginResetPost.md)|  |
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\Msg**](../Model/Msg.md)
+[**\AkeneoPresales\DescrbAPI\Model\Msg**](../Model/Msg.md)
 
 ### Authorization
 
@@ -864,7 +864,7 @@ Name | Type | Description  | Notes
 ## `revokeTokenApiV1LoginRevokePost()`
 
 ```php
-revokeTokenApiV1LoginRevokePost(): \AkeneoPresales\DescrbAPI\Client\Model\Msg
+revokeTokenApiV1LoginRevokePost(): \AkeneoPresales\DescrbAPI\Model\Msg
 ```
 
 Revoke Token
@@ -879,10 +879,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\LoginApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\LoginApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -903,7 +903,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\Msg**](../Model/Msg.md)
+[**\AkeneoPresales\DescrbAPI\Model\Msg**](../Model/Msg.md)
 
 ### Authorization
 
@@ -921,7 +921,7 @@ This endpoint does not need any parameter.
 ## `validateMagicLinkApiV1LoginClaimPost()`
 
 ```php
-validateMagicLinkApiV1LoginClaimPost($web_token): \AkeneoPresales\DescrbAPI\Client\Model\Token
+validateMagicLinkApiV1LoginClaimPost($web_token): \AkeneoPresales\DescrbAPI\Model\Token
 ```
 
 Validate Magic Link
@@ -936,16 +936,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-$config = AkeneoPresales\DescrbAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = AkeneoPresales\DescrbAPI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\LoginApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\LoginApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$web_token = new \AkeneoPresales\DescrbAPI\Client\Model\WebToken(); // \AkeneoPresales\DescrbAPI\Client\Model\WebToken
+$web_token = new \AkeneoPresales\DescrbAPI\Model\WebToken(); // \AkeneoPresales\DescrbAPI\Model\WebToken
 
 try {
     $result = $apiInstance->validateMagicLinkApiV1LoginClaimPost($web_token);
@@ -959,11 +959,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **web_token** | [**\AkeneoPresales\DescrbAPI\Client\Model\WebToken**](../Model/WebToken.md)|  |
+ **web_token** | [**\AkeneoPresales\DescrbAPI\Model\WebToken**](../Model/WebToken.md)|  |
 
 ### Return type
 
-[**\AkeneoPresales\DescrbAPI\Client\Model\Token**](../Model/Token.md)
+[**\AkeneoPresales\DescrbAPI\Model\Token**](../Model/Token.md)
 
 ### Authorization
 
@@ -994,12 +994,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new AkeneoPresales\DescrbAPI\Client\Api\LoginApi(
+$apiInstance = new AkeneoPresales\DescrbAPI\Api\LoginApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$recaptcha_data = new \AkeneoPresales\DescrbAPI\Client\Model\RecaptchaData(); // \AkeneoPresales\DescrbAPI\Client\Model\RecaptchaData
+$recaptcha_data = new \AkeneoPresales\DescrbAPI\Model\RecaptchaData(); // \AkeneoPresales\DescrbAPI\Model\RecaptchaData
 
 try {
     $result = $apiInstance->verifyRecaptchaEndpointApiV1LoginVerifyRecaptchaPost($recaptcha_data);
@@ -1013,7 +1013,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **recaptcha_data** | [**\AkeneoPresales\DescrbAPI\Client\Model\RecaptchaData**](../Model/RecaptchaData.md)|  |
+ **recaptcha_data** | [**\AkeneoPresales\DescrbAPI\Model\RecaptchaData**](../Model/RecaptchaData.md)|  |
 
 ### Return type
 

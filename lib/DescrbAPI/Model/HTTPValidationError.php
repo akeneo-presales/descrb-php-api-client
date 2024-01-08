@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace AkeneoPresales\DescrbAPI\Client\Model;
+namespace AkeneoPresales\DescrbAPI\Model;
 
 use \ArrayAccess;
-use \AkeneoPresales\DescrbAPI\Client\ObjectSerializer;
+use \AkeneoPresales\DescrbAPI\ObjectSerializer;
 
 /**
  * HTTPValidationError Class Doc Comment
@@ -59,7 +59,7 @@ class HTTPValidationError implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'detail' => '\AkeneoPresales\DescrbAPI\Client\Model\ValidationError[]'
+        'detail' => '\AkeneoPresales\DescrbAPI\Model\ValidationError[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class HTTPValidationError implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets detail
      *
-     * @return \AkeneoPresales\DescrbAPI\Client\Model\ValidationError[]|null
+     * @return \AkeneoPresales\DescrbAPI\Model\ValidationError[]|null
      */
     public function getDetail()
     {
@@ -218,7 +218,7 @@ class HTTPValidationError implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets detail
      *
-     * @param \AkeneoPresales\DescrbAPI\Client\Model\ValidationError[]|null $detail detail
+     * @param \AkeneoPresales\DescrbAPI\Model\ValidationError[]|null $detail detail
      *
      * @return self
      */
