@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  AkeneoPresales\DescrbAPI\Client
+ * @package  AkeneoPresales\DescrbAPI
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -35,7 +35,7 @@ use \AkeneoPresales\DescrbAPI\ObjectSerializer;
  * BrandTemplate Class Doc Comment
  *
  * @category Class
- * @package  AkeneoPresales\DescrbAPI\Client
+ * @package  AkeneoPresales\DescrbAPI
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>

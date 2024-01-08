@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  AkeneoPresales\DescrbAPI\Client
+ * @package  AkeneoPresales\DescrbAPI
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,14 +25,14 @@
  * Do not edit the class manually.
  */
 
-namespace AkeneoPresales\DescrbAPI\Client;
+namespace AkeneoPresales\DescrbAPI;
 
 /**
  * Configuration Class Doc Comment
  * PHP version 7.3
  *
  * @category Class
- * @package  AkeneoPresales\DescrbAPI\Client
+ * @package  AkeneoPresales\DescrbAPI
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -395,7 +395,7 @@ class Configuration
      */
     public static function toDebugReport()
     {
-        $report  = 'PHP SDK (AkeneoPresales\DescrbAPI\Client) Debug Report:' . PHP_EOL;
+        $report  = 'PHP SDK (AkeneoPresales\DescrbAPI) Debug Report:' . PHP_EOL;
         $report .= '    OS: ' . php_uname() . PHP_EOL;
         $report .= '    PHP Version: ' . PHP_VERSION . PHP_EOL;
         $report .= '    The version of the OpenAPI document: 0.1.0' . PHP_EOL;

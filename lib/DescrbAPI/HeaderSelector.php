@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  AkeneoPresales\DescrbAPI\Client
+ * @package  AkeneoPresales\DescrbAPI
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace AkeneoPresales\DescrbAPI\Client;
+namespace AkeneoPresales\DescrbAPI;
 
 use \Exception;
 
@@ -33,7 +33,7 @@ use \Exception;
  * ApiException Class Doc Comment
  *
  * @category Class
- * @package  AkeneoPresales\DescrbAPI\Client
+ * @package  AkeneoPresales\DescrbAPI
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

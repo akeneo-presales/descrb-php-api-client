@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  AkeneoPresales\DescrbAPI\Client
+ * @package  AkeneoPresales\DescrbAPI
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AkeneoPresales\DescrbAPI\Client;
+namespace AkeneoPresales\DescrbAPI;
 
 use AkeneoPresales\DescrbAPI\Model\ModelInterface;
 
@@ -34,7 +34,7 @@ use AkeneoPresales\DescrbAPI\Model\ModelInterface;
  * ObjectSerializer Class Doc Comment
  *
  * @category Class
- * @package  AkeneoPresales\DescrbAPI\Client
+ * @package  AkeneoPresales\DescrbAPI
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
