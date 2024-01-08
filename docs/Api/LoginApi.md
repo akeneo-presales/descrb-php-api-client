@@ -1,6 +1,6 @@
 # AkeneoPresales\DescrbAPI\LoginApi
 
-All URIs are relative to http://localhost.
+All URIs are relative to https://app.descrb.com.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
