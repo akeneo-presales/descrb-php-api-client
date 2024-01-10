@@ -17,9 +17,13 @@
         "guzzlehttp/psr7": "^2.0"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.12"
+        "friendsofphp/php-cs-fixer": "^2.12",
+        "phpunit/phpunit": "^10.5"
     },
     "autoload": {
-        "psr-4": { "AkeneoPresales\\": "lib/" }
+        "psr-4": {
+            "AkeneoPresales\\": "lib/",
+            "Test\\AkeneoPresales\\": "test/"
+        }
     }
 }
