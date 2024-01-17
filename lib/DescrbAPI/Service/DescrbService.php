@@ -20,7 +20,7 @@ class DescrbService
             new Client()
         );
         $username = $_SERVER['DESCRB_USERNAME']; // string
-        $password =  $_SERVER['DESCRB_PASSWORD']; // string
+        $password = $_SERVER['DESCRB_PASSWORD']; // string
 
         try {
             /** @var Token $result */
@@ -49,7 +49,7 @@ class DescrbService
         return $this;
     }
 
-    public function postImage($imagePath)
+    public function postImage($imagePath, $params = [])
     {
         $config = Configuration::getDefaultConfiguration()->setAccessToken($this->auth->getAccessToken());
 
@@ -62,11 +62,11 @@ class DescrbService
         $photo_url = ''; // string | Photo URL
         $name = array(); // string[] | Product Names
         $product_id = array(); // string[] | Product IDs
-        $length = 512; // int | Numer of Tokens
-        $language = 'en'; // string | Supported languages: en,de,fr,es,ro,pl
+        $length = $params['length'] ?? 512; // int | Numer of Tokens
+        $language = $params['language'] ?? 'en'; // string | Supported languages: en,de,fr,es,ro,pl
         $data_language = ''; // string | Data Source Language
-        $language_style = 'Neutral'; // string | Choose between Neutral, Casual, Specialist
-        $keywords = ''; // string | Important Keywords to include
+        $language_style = $params['style'] ?? 'Neutral'; // string | Choose between Neutral, Casual, Specialist
+        $keywords = $params['keywords'] ?? ''; // string | Important Keywords to include
         $seotags = false; // bool | Add SEO Tags
         $product_history = false; // bool | Add Product History
         $manufacturer_history = false; // bool | Add Manufacturer History
@@ -98,8 +98,7 @@ class DescrbService
         try {
             $result = json_decode($apiInstance->getStatusApiV1TaskCheckStatusGet($taskId));
 
-            if(isset($result->{$taskId}))
-            {
+            if (isset($result->{$taskId})) {
                 return $result->{$taskId};
             }
 
@@ -107,7 +106,7 @@ class DescrbService
         } catch (\Exception $e) {
             echo 'Exception when calling TaskApi->getStatusApiV1TaskCheckStatusGet: ', $e->getMessage(), PHP_EOL;
         }
-        
+
     }
 
     public function getDescription($descriptionId)
