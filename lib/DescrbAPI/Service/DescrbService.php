@@ -27,6 +27,7 @@ class DescrbService
             $result = $apiInstance->loginWithOauth2ApiV1LoginOauthPost($username, $password, 'password', '', '', '');
             $this->auth = $result;
         } catch (\Exception $e) {
+            $this->auth = new Token();
             echo 'Exception when calling LoginApi->loginWithOauth2ApiV1LoginOauthPost: ', $e->getMessage(), PHP_EOL;
         }
     }
