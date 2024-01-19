@@ -13,6 +13,8 @@ use PHPUnit\Framework\TestCase;
 class DescrbServiceTest extends TestCase
 {
 
+    private DescrbService $stub;
+
     public function setUp(): void
     {
         $_SERVER['DESCRB_USERNAME'] = 'your email';
