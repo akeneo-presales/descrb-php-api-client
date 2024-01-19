@@ -69,9 +69,9 @@ class DescrbService
         $language_style = $params['style'] ?? 'Neutral'; // string | Choose between Neutral, Casual, Specialist
         $keywords = $params['keywords'] ?? ''; // string | Important Keywords to include
         $seotags = false; // bool | Add SEO Tags
-        $product_history = false; // bool | Add Product History
-        $manufacturer_history = false; // bool | Add Manufacturer History
-        $technologies = false; // bool | Add List of Technologies
+        $product_history = true; // bool | Add Product History
+        $manufacturer_history = true; // bool | Add Manufacturer History
+        $technologies = true; // bool | Add List of Technologies
         $labels = false; // bool | Add Labels
         $logos = false; // bool | Add Logo Detection
         $search_codes = false; // bool | Search for SKU, MPU, Product ID
