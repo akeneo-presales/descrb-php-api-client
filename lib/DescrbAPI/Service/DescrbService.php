@@ -27,7 +27,7 @@ class DescrbService
             $result = $apiInstance->loginWithOauth2ApiV1LoginOauthPost($username, $password, 'password', '', '', '');
             $this->auth = $result;
         } catch (\Exception $e) {
-            $this->auth = new Token();
+            $this->auth = null;
             echo 'Exception when calling LoginApi->loginWithOauth2ApiV1LoginOauthPost: ', $e->getMessage(), PHP_EOL;
         }
     }
@@ -48,6 +48,11 @@ class DescrbService
     {
         $this->auth = $auth;
         return $this;
+    }
+
+    public function isAuthenticated() :bool
+    {
+        return null !== $this->auth;
     }
 
     public function postImage($imagePath, $params = [])
