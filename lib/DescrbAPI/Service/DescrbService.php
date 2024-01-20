@@ -12,7 +12,7 @@ use GuzzleHttp\Client;
 
 class DescrbService
 {
-    private Token $auth;
+    private ?Token $auth;
 
     public function __construct()
     {
