@@ -28,7 +28,6 @@ class DescrbService
             $this->auth = $result;
         } catch (\Exception $e) {
             $this->auth = null;
-            echo 'Exception when calling LoginApi->loginWithOauth2ApiV1LoginOauthPost: ', $e->getMessage(), PHP_EOL;
         }
     }
 
